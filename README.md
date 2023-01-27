@@ -37,7 +37,7 @@ na GitHub Pages, w gałąź `gh-pages`, za kazdym razem jeśli zostaną wprowadz
 
 Po jakimś czasie stronę mozna będzie zobaczyć na zywo pod adresem który 
 jest wpisany w poprawione właściwości `homepage`, na przykład
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
+[https://rolidabrowski.github.io/ice-cream-grupa-7](https://rolidabrowski.github.io/ice-cream-grupa-7).
 
 ## Pliki i folderzy
 
