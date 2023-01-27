@@ -4,4 +4,20 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-@import './example';
+
+@import './partials/global';
+@import './partials/typography';
+@import './partials/heroheader';
+@import './partials/products';
+@import './partials/about';
+@import './partials/advantages';
+@import './partials/gallery';
+@import './partials/customerreviews';
+@import './partials/contacts';
+@import './partials/footer';
+@import './partials/button';
+
+
+
+
+

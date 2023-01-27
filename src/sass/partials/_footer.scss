@@ -1,0 +1,96 @@
+.footer {
+  min-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  background-color: $brandColor6;
+}
+
+.ftext {
+  max-width: 232px;
+  margin-bottom: 43px;
+  text-align: left;
+  padding-top: 113px;
+
+  &__title {
+    font-family: $optionalFontStyle;
+    font-size: 18px;
+    line-height: 21px;
+    color: $brandColor2;
+  }
+
+  &__slogan {
+    font-size: 34px;
+    line-height: 39px;
+    color: $colorText1;
+    letter-spacing: 0.04em;
+    max-width: 200px;
+  }
+}
+
+.fsocials {
+  margin-left: 147px;
+
+  &__list {
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 46px;
+  }
+
+  &__item {
+    text-decoration: none;
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__icon {
+    fill: $iconColor3;
+    width: 32px;
+    height: 32px;
+    justify-content: space-between;
+    gap: 28px;
+
+    &:hover,
+    &:focus {
+      fill: $colorText1;
+      cursor: pointer;
+    }
+  }
+}
+
+.fcontact {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.833;
+  color: $baseColor2;
+  margin-right: 20px;
+
+  &__link {
+    color: $colorText1;
+    margin-left: 3px;
+  }
+}
+
+.fcopyright {
+  border-top: 1px solid #e1e1e1;
+  min-height: 89px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    width: 140px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: $colorText2;
+  }
+}
