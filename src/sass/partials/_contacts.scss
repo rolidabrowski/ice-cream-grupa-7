@@ -7,7 +7,7 @@
   background-color: $base-white;
   border: 0;
   font-weight: 700;
-  color: $colorText1;
+  color: $red-text;
   size: 16px;
   line-height: 1.3em;
   gap: 15.77px;
@@ -32,7 +32,7 @@
 .modal__button:hover,
 .modal__button:focus {
   color: $base-white;
-  background-color: $iconColor2;
+  background-color: $red-dark-icon;
 }
 
 .heroheader__button--products {
@@ -42,7 +42,7 @@
   border-radius: 20px;
   background-color: $base-white;
   border: 0;
-  color: $colorText1;
+  color: $red-text;
   font-size: 8px;
   line-height: 1.3em;
   font-weight: 400;
@@ -51,7 +51,7 @@
 .heroheader__button--products:hover,
 .heroheader__button--products:focus {
   color: $base-white;
-  background-color: $iconColor2;
+  background-color: $red-dark-icon;
 }
 
 .heroheader__button--how {
@@ -62,7 +62,7 @@
   border-radius: 20px;
   background-color: $base-white;
   border: 0;
-  color: $colorText1;
+  color: $red-text;
   font-size: 8px;
   line-height: 1.3em;
 }
@@ -70,7 +70,7 @@
 .heroheader__button--how:hover,
 .heroheader__button--how:focus {
   color: $base-white;
-  background-color: $iconColor2;
+  background-color: $red-dark-icon;
 }
 
 .products__button {
@@ -81,7 +81,7 @@
   border-radius: 50%;
   background-color: $base-white;
   border: 0;
-  color: $colorText1;
+  color: $red-text;
   font-size: 8px;
   line-height: 1.3em;
 }
@@ -95,7 +95,7 @@
   background-color: $base-white;
   border: 0;
   font-weight: 700;
-  color: $colorText1;
+  color: $red-text;
   font-size: 14px;
   line-height: 1.3em;
   align-items: center;
@@ -110,7 +110,7 @@
 .about__button:hover,
 .about__button:focus {
   color: $base-white;
-  background-color: $iconColor2;
+  background-color: $red-dark-icon;
 }
 
 .contacts__button--locations {
@@ -122,7 +122,7 @@
   background-color: $base-white;
   border: 0;
   font-weight: 700;
-  color: $colorText1;
+  color: $red-text;
   font-size: 16px;
   line-height: 1.3em;
   align-items: center;
@@ -148,7 +148,7 @@
   background-color: $base-white;
   border: 0;
   font-weight: 700;
-  color: $colorText1;
+  color: $red-text;
   font-size: 16px;
   line-height: 1.3em;
   align-items: center;
@@ -158,13 +158,13 @@
 .contacts__button--franchise:hover,
 .contacts__button--franchise:focus {
   color: $base-white;
-  background-color: $iconColor2;
+  background-color: $red-dark-icon;
 }
 
 .contacts__button--locations:hover,
 .contacts__button--locations:focus {
   color: $base-white;
-  background-color: $iconColor2;
+  background-color: $red-dark-icon;
 }
 
 .products__button {

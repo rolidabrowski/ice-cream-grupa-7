@@ -7,7 +7,7 @@
   }
   &__title {
     margin-bottom: 144px;
-    font-family: 'Titan One';
+    font-family: $optional-font;
     font-size: 2.12rem;
     line-height: 1.15;
     text-align: center;
@@ -125,7 +125,7 @@
   }
 
   &__subtitle {
-    font-family: 'Titan One';
+    font-family: $optional-font;
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 1.15;
@@ -138,7 +138,7 @@
   &__description {
     padding-left: 41px;
     padding-right: 39px;
-    font-family: 'DM Sans';
+    font-family: $default-font;
     font-weight: 700;
     font-size: 0.87rem;
     line-height: 1.52;

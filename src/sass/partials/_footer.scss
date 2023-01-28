@@ -5,7 +5,7 @@
   padding-right: 20px;
   padding-left: 20px;
   margin-bottom: 25px;
-  background-color: $brandColor6;
+  background-color: $pink-light-bg;
 }
 
 .ftext {
@@ -15,16 +15,16 @@
   padding-top: 113px;
 
   &__title {
-    font-family: $optionalFontStyle;
+    font-family: $optional-font;
     font-size: 18px;
     line-height: 21px;
-    color: $brandColor2;
+    color: $pink-dark;
   }
 
   &__slogan {
     font-size: 34px;
     line-height: 39px;
-    color: $colorText1;
+    color: $red-text;
     letter-spacing: 0.04em;
     max-width: 200px;
   }
@@ -49,7 +49,7 @@
   }
 
   &__icon {
-    fill: $iconColor3;
+    fill: $pink-icon;
     width: 32px;
     height: 32px;
     justify-content: space-between;
@@ -57,7 +57,7 @@
 
     &:hover,
     &:focus {
-      fill: $colorText1;
+      fill: $red-text;
       cursor: pointer;
     }
   }
@@ -73,7 +73,7 @@
   margin-right: 20px;
 
   &__link {
-    color: $colorText1;
+    color: $red-text;
     margin-left: 3px;
   }
 }
@@ -91,6 +91,6 @@
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
-    color: $colorText2;
+    color: $grey-text;
   }
 }
