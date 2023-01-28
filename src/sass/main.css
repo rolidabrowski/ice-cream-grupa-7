@@ -109,11 +109,21 @@
   font-size: 1.88rem;
 }
 .products__btn {
+  cursor: pointer;
   width: 40px;
   height: 40px;
+  font-weight: 400;
   border-radius: 50%;
-  border-style: none;
   background-color: #fff;
+  border: 0;
+  color: #d41443;
+  font-size: 8px;
+  line-height: 1.3em;
+}
+.products__icon {
+  fill: #d41443;
+  display: flex;
+  margin: 0 auto;
 }
 
 .modal__button {

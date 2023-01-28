@@ -118,10 +118,21 @@
   }
 
   &__btn {
+    cursor: pointer;
     width: 40px;
     height: 40px;
+    font-weight: 400;
     border-radius: 50%;
-    border-style: none;
     background-color: $base-white;
+    border: 0;
+    color: $red-text;
+    font-size: 8px;
+    line-height: 1.3em;
+  }
+
+  &__icon {
+    fill: $red-text;
+    display: flex;
+    margin: 0 auto;
   }
 }
