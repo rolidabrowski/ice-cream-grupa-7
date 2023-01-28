@@ -7,23 +7,23 @@
   }
   &__title {
     margin-bottom: 144px;
+    color: $red-text;
+    @extend .title;
+  }
+
+  &__pre-title {
     font-family: $optional-font;
-    font-size: 2.12rem;
-    line-height: 1.15;
+    font-size: 1.12rem;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #d41443;
-
-    &--smaller {
-      font-size: 1.12rem;
-      line-height: 1.17;
-      color: #ffa5ba;
-      display: flex;
-      justify-content: center;
-      margin-bottom: 0;
-    }
+    color: $pink-dark;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
   }
+
   &__list {
     list-style: none;
     display: flex;
@@ -34,8 +34,9 @@
     position: relative;
     margin: 0 auto;
   }
+
   &__item {
-    color: #fff;
+    color: $base-white;
     width: 280px;
     height: 485px;
     display: flex;
@@ -43,7 +44,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 24px;
-    background-color: #ffb8ca;
+    background-color: $pink-bg;
     margin-bottom: 130px;
     position: relative;
 
@@ -64,14 +65,14 @@
       width: 6px;
       height: 6px;
       border-radius: 50%;
-      background-color: #fff;
+      background-color: $base-white;
       position: absolute;
       top: 42%;
       left: 50%;
     }
 
     &--second {
-      background-color: #f0d1a5;
+      background-color: $beige;
       position: relative;
 
       ::before {
@@ -89,7 +90,7 @@
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: $base-white;
         position: absolute;
         top: 42%;
         left: 50%;
@@ -97,7 +98,7 @@
     }
 
     &--third {
-      background-color: #c2e297;
+      background-color: $lime;
       position: relative;
       margin-bottom: 98px;
 
@@ -116,7 +117,7 @@
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: $base-white;
         position: absolute;
         top: 42%;
         left: 50%;
@@ -125,13 +126,7 @@
   }
 
   &__subtitle {
-    font-family: $optional-font;
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    @extend .subtitle;
     margin-bottom: 66px;
   }
 

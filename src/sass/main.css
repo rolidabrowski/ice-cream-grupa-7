@@ -1,0 +1,409 @@
+@charset "UTF-8";
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+.products {
+  display: flex;
+  justify-content: center;
+}
+.products__page-wrapper {
+  margin: 0 auto;
+}
+.products__title {
+  margin-bottom: 144px;
+  color: #d41443;
+}
+.products__pre-title {
+  font-family: "Titan One", cursive;
+  font-size: 1.12rem;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.products__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+.products__item {
+  color: #fff;
+  width: 280px;
+  height: 485px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  background-color: #ffb8ca;
+  margin-bottom: 130px;
+  position: relative;
+}
+.products__item ::before {
+  content: "";
+  width: 249px;
+  height: 252px;
+  background-image: url("../assets/images/images/mobile/icecream-product-mb.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -115px;
+  left: 15px;
+}
+.products__item ::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+}
+.products__item--second {
+  background-color: #f0d1a5;
+  position: relative;
+}
+.products__item--second ::before {
+  content: "";
+  max-width: 249px;
+  height: 252px;
+  background-image: url("../assets/images/images/mobile/coffee-product-mb.png");
+  position: absolute;
+  top: -115px;
+  left: 15px;
+}
+.products__item--second ::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+}
+.products__item--third {
+  background-color: #c2e297;
+  position: relative;
+  margin-bottom: 98px;
+}
+.products__item--third ::before {
+  content: "";
+  width: 249px;
+  height: 252px;
+  background-image: url("../assets/images/images/mobile/milkshake-product-mb.png");
+  position: absolute;
+  top: -115px;
+  left: 15px;
+}
+.products__item--third ::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+}
+.products__subtitle {
+  margin-bottom: 66px;
+}
+.products__description {
+  padding-left: 41px;
+  padding-right: 39px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.87rem;
+  line-height: 1.52;
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin: 0 auto;
+}
+
+.modal__button {
+  display: flex;
+  cursor: pointer;
+  width: 209px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #fff;
+  border: 0;
+  font-weight: 700;
+  color: #d41443;
+  size: 16px;
+  line-height: 1.3em;
+  gap: 15.77px;
+  align-items: center;
+  justify-content: center;
+}
+.modal__button__button--vector {
+  stroke: 2px;
+}
+.modal__button__button--text {
+  display: block;
+  width: 90.7px;
+}
+
+.modal__button--vector:hover,
+.modal__button--vector:focus {
+  stroke: white;
+}
+
+.modal__button:hover,
+.modal__button:focus {
+  color: #fff;
+  background-color: #c7133e;
+}
+
+.heroheader__button--products {
+  cursor: pointer;
+  width: 62, 4px;
+  height: 24px;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 0;
+  color: #d41443;
+  font-size: 8px;
+  line-height: 1.3em;
+  font-weight: 400;
+}
+
+.heroheader__button--products:hover,
+.heroheader__button--products:focus {
+  color: #fff;
+  background-color: #c7133e;
+}
+
+.heroheader__button--how {
+  cursor: pointer;
+  width: 82, 8px;
+  height: 24px;
+  font-weight: 400;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 0;
+  color: #d41443;
+  font-size: 8px;
+  line-height: 1.3em;
+}
+
+.heroheader__button--how:hover,
+.heroheader__button--how:focus {
+  color: #fff;
+  background-color: #c7133e;
+}
+
+.products__button {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  font-weight: 400;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 0;
+  color: #d41443;
+  font-size: 8px;
+  line-height: 1.3em;
+}
+
+.about__button {
+  display: flex;
+  cursor: pointer;
+  width: 176px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #fff;
+  border: 0;
+  font-weight: 700;
+  color: #d41443;
+  font-size: 14px;
+  line-height: 1.3em;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__button--vector {
+  margin-left: 13.62px;
+  stroke-width: 2px;
+}
+
+.about__button:hover,
+.about__button:focus {
+  color: #fff;
+  background-color: #c7133e;
+}
+
+.contacts__button--locations {
+  display: flex;
+  cursor: pointer;
+  width: 161.45px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #fff;
+  border: 0;
+  font-weight: 700;
+  color: #d41443;
+  font-size: 16px;
+  line-height: 1.3em;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts__button--vector1 {
+  stroke-width: 2px;
+  margin-left: 8px;
+}
+
+.contacts__button--vector2 {
+  stroke-width: 2px;
+  margin-left: 13px;
+}
+
+.contacts__button--franchise {
+  display: flex;
+  cursor: pointer;
+  width: 161.45px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #fff;
+  border: 0;
+  font-weight: 700;
+  color: #d41443;
+  font-size: 16px;
+  line-height: 1.3em;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts__button--franchise:hover,
+.contacts__button--franchise:focus {
+  color: #fff;
+  background-color: #c7133e;
+}
+
+.contacts__button--locations:hover,
+.contacts__button--locations:focus {
+  color: #fff;
+  background-color: #c7133e;
+}
+
+.products__button {
+  border-radius: 50%;
+}
+
+.footer {
+  min-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  background-color: #fff5f6;
+}
+
+.ftext {
+  max-width: 232px;
+  margin-bottom: 43px;
+  text-align: left;
+  padding-top: 113px;
+}
+.ftext__title {
+  font-family: "Titan One", cursive;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffa5ba;
+}
+.ftext__slogan {
+  font-size: 34px;
+  line-height: 39px;
+  color: #d41443;
+  letter-spacing: 0.04em;
+  max-width: 200px;
+}
+
+.fsocials {
+  margin-left: 147px;
+}
+.fsocials__list {
+  text-decoration: none;
+  display: flex;
+  margin-bottom: 46px;
+}
+.fsocials__item {
+  text-decoration: none;
+  display: flex;
+}
+.fsocials__item:not(:last-child) {
+  margin-right: 30px;
+}
+.fsocials__icon {
+  fill: #fea5bb;
+  width: 32px;
+  height: 32px;
+  justify-content: space-between;
+  gap: 28px;
+}
+.fsocials__icon:hover, .fsocials__icon:focus {
+  fill: #d41443;
+  cursor: pointer;
+}
+
+.fcontact {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.833;
+  color: #fff;
+  margin-right: 20px;
+}
+.fcontact__link {
+  color: #d41443;
+  margin-left: 3px;
+}
+
+.fcopyright {
+  border-top: 1px solid #e1e1e1;
+  min-height: 89px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fcopyright__text {
+  width: 140px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #907e82;
+}
+
+.title, .products__title {
+  font-family: "Titan One", cursive;
+  font-size: 2.12rem;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.subtitle, .products__subtitle {
+  font-family: "Titan One", cursive;
+  font-size: 1.25rem;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}/*# sourceMappingURL=main.css.map */
