@@ -1,0 +1,85 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  background-color: $pink-light-bg;
+
+  &__page-wrapper {
+    padding: 125px 0 20px 0;
+  }
+  &__subtitle-sizing {
+    margin-bottom: 15px;
+  }
+
+  &__title-sizing {
+    margin: auto;
+    margin-bottom: 26px;
+    width: 200px;
+  }
+  &__background {
+    background-image: url('../assets/images/images/mobile/spilled-milk-about-mb.png');
+    background-repeat: no-repeat;
+    background-position: bottom 72px right;
+    background-size: contain;
+  }
+  &__image {
+    margin: 0 20px 46px 20px;
+  }
+  &__article {
+    margin: 0 50px 0 50px;
+  }
+  &__text-main {
+    font-family: $default-font;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1.215rem;
+    color: $base-black;
+    margin-bottom: 47px;
+  }
+  &__text {
+    font-family: $default-font;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1.215rem;
+    color: $grey-text;
+  }
+  &__button {
+    margin-top: 28px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about__background {
+    background-image: url('../assets/images/images/mobile/spilled-milk-about-mb@2x.png');
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .about__background {
+    background-image: none;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .about__background {
+    background-image: url('../assets/images/images/desktop/spilled-milk-about-dst.png');
+  }
+}
+
+@media (min-width: $desktop-size) and (min-device-pixel-ratio: 2),
+  (min-width: $desktop-size) and (min-resolution: 192dpi),
+  (min-width: $desktop-size) and (min-resolution: 2dppx) {
+  .about__background {
+    background-image: url('../assets/images/images/desktop/spilled-milk-about-dst@2x.png');
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .about {
+    &__page-wrapper {
+      padding: 130px 36px 66px 39px;
+    }
+  }
+}
