@@ -3,6 +3,40 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.title, .about__title-sizing {
+  font-family: "Titan One", cursive;
+  font-size: 2.12rem;
+  line-height: 2.4rem;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.subtitle, .about__subtitle-sizing {
+  font-family: "Titan One", cursive;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.15rem;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
 .products {
   display: flex;
   justify-content: center;
@@ -246,6 +280,76 @@
     top: 36%;
   }
 }
+.about {
+  background-color: #fff5f6;
+}
+.about__page-wrapper {
+  padding: 125px 0 20px 0;
+}
+.about__subtitle-sizing {
+  margin-bottom: 15px;
+}
+.about__title-sizing {
+  margin: auto;
+  margin-bottom: 26px;
+  width: 200px;
+}
+.about__background {
+  background-image: url("../assets/images/images/mobile/spilled-milk-about-mb.png");
+  background-repeat: no-repeat;
+  background-position: bottom 72px right;
+  background-size: contain;
+}
+.about__image {
+  margin: 0 20px 46px 20px;
+}
+.about__article {
+  margin: 0 50px 0 50px;
+}
+.about__text-main {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.215rem;
+  color: #000;
+  margin-bottom: 47px;
+}
+.about__text {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.215rem;
+  color: #907e82;
+}
+.about__button {
+  margin-top: 28px;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about__background {
+    background-image: url("../assets/images/images/mobile/spilled-milk-about-mb@2x.png");
+  }
+}
+@media (min-width: 768px) {
+  .about__background {
+    background-image: none;
+  }
+}
+@media (min-width: 1280px) {
+  .about__background {
+    background-image: url("../assets/images/images/desktop/spilled-milk-about-dst.png");
+  }
+}
+@media (min-width: 1280px) and (min-device-pixel-ratio: 2), (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 192dpi), (min-width: 1280px) and (min-resolution: 2dppx) {
+  .about__background {
+    background-image: url("../assets/images/images/desktop/spilled-milk-about-dst@2x.png");
+  }
+}
+@media (min-width: 768px) {
+  .about__page-wrapper {
+    padding: 130px 36px 66px 39px;
+  }
+}
 .modal__button {
   display: flex;
   cursor: pointer;
@@ -418,106 +522,129 @@
 }
 
 .footer {
-  min-width: 320px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-bottom: 25px;
   background-color: #fff5f6;
 }
-
-.ftext {
+.footer__container {
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 320px;
+  margin-bottom: 43px;
+}
+.footer__description {
   max-width: 232px;
   margin-bottom: 43px;
-  text-align: left;
   padding-top: 113px;
+  text-transform: uppercase;
 }
-.ftext__title {
+.footer__title {
   font-family: "Titan One", cursive;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.125rem;
+  line-height: 1.3rem;
   color: #ffa5ba;
+  padding-bottom: 16px;
 }
-.ftext__slogan {
-  font-size: 34px;
-  line-height: 39px;
+.footer__title--accent {
+  font-size: 2.125rem;
+  line-height: 2.44rem;
   color: #d41443;
   letter-spacing: 0.04em;
   max-width: 200px;
 }
-
-.fsocials {
-  margin-left: 147px;
-}
-.fsocials__list {
-  text-decoration: none;
-  display: flex;
-  margin-bottom: 46px;
-}
-.fsocials__item {
-  text-decoration: none;
-  display: flex;
-}
-.fsocials__item:not(:last-child) {
-  margin-right: 30px;
-}
-.fsocials__icon {
-  fill: #fea5bb;
-  width: 32px;
-  height: 32px;
-  justify-content: space-between;
-  gap: 28px;
-}
-.fsocials__icon:hover, .fsocials__icon:focus {
-  fill: #d41443;
-  cursor: pointer;
-}
-
-.fcontact {
+.footer__contact {
   display: flex;
   justify-content: flex-end;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 1.833;
-  color: #fff;
-  margin-right: 20px;
+  font-size: 0.75rem;
+  line-height: 1.85rem;
+  color: #000;
 }
-.fcontact__link {
+.footer__link {
   color: #d41443;
   margin-left: 3px;
 }
-
-.fcopyright {
+.footer__copyright {
   border-top: 1px solid #e1e1e1;
   min-height: 89px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.fcopyright__text {
+.footer__text {
   width: 140px;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   text-align: center;
   color: #907e82;
 }
-
-.title {
-  font-family: "Titan One", cursive;
-  font-size: 2.12rem;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+.footer .social {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer .social__list {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+  width: 152px;
+}
+.footer .social__icon {
+  fill: #fea5bb;
+  width: 32px;
+  height: 32px;
+}
+.footer .social__icon:hover, .footer .social__icon:focus {
+  fill: #d41443;
+  cursor: pointer;
 }
 
-.subtitle {
-  font-family: "Titan One", cursive;
-  font-size: 1.25rem;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}/*# sourceMappingURL=main.css.map */
+@media screen and (min-width: 480px) {
+  .footer__container {
+    min-width: 480px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 114px;
+  }
+  .footer__description {
+    max-width: 474px;
+    padding-top: 165px;
+  }
+  .footer__title {
+    font-size: 1.625rem;
+    line-height: 1.875rem;
+    padding-bottom: 16px;
+    letter-spacing: 0.04em;
+    max-width: 340px;
+  }
+  .footer__title--accent {
+    font-size: 3rem;
+    line-height: 3.438rem;
+    letter-spacing: 0.06em;
+    max-width: 474px;
+  }
+  .footer__contact {
+    flex-wrap: wrap;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    padding-top: 238px;
+  }
+  .footer__copyright {
+    border-top: 1px solid #e1e1e1;
+    min-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__text {
+    width: 276px;
+    line-height: 1.625rem;
+    text-align: center;
+  }
+  .social {
+    padding-top: 165px;
+  }
+  .social__icon {
+    width: 34px;
+    height: 34px;
+  }
+}

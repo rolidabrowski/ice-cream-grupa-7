@@ -20,6 +20,7 @@
     font-size: 1.125rem;
     line-height: 1.3rem;
     color: $pink-dark;
+    padding-bottom: 16px;
   }
 
   &__title--accent {
@@ -83,6 +84,67 @@
         fill: $red-text;
         cursor: pointer;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer {
+    &__container {
+      min-width: 480px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 114px;
+    }
+
+    &__description {
+      max-width: 474px;
+      padding-top: 165px;
+    }
+
+    &__title {
+      font-size: 1.625rem;
+      line-height: 1.875rem;
+      padding-bottom: 16px;
+      letter-spacing: 0.04em;
+      max-width: 340px;
+    }
+
+    &__title--accent {
+      font-size: 3rem;
+      line-height: 3.438rem;
+      letter-spacing: 0.06em;
+      max-width: 474px;
+    }
+
+    &__contact {
+      flex-wrap: wrap;
+      font-size: 0.875rem;
+      line-height: 1.625rem;
+      padding-top: 238px;
+    }
+
+    &__copyright {
+      border-top: 1px solid #e1e1e1;
+      min-height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__text {
+      width: 276px;
+      line-height: 1.625rem;
+      text-align: center;
+    }
+  }
+
+  .social {
+    padding-top: 165px;
+
+    &__icon {
+      width: 34px;
+      height: 34px;
     }
   }
 }
