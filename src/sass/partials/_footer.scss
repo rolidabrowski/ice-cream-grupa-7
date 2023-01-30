@@ -95,12 +95,15 @@
       min-width: 480px;
       display: flex;
       justify-content: space-between;
-      padding: 0 114px;
+      padding: 0 36px;
     }
+
     &__description {
-      max-width: 474px;
+      max-width: 340px;
+      width: 100%;
       padding-top: 165px;
     }
+
     &__title {
       font-size: 1.625rem;
       line-height: 1.875rem;
@@ -108,18 +111,21 @@
       letter-spacing: 0.04em;
       max-width: 340px;
     }
+
     &__title--accent {
       font-size: 3rem;
       line-height: 3.438rem;
       letter-spacing: 0.06em;
-      max-width: 474px;
+      max-width: 340px;
     }
+
     &__contact {
       flex-wrap: wrap;
       font-size: 0.875rem;
       line-height: 1.625rem;
-      padding-top: 238px;
+      padding-top: 50px;
     }
+
     &__copyright {
       border-top: 1px solid #e1e1e1;
       min-height: 45px;
@@ -127,17 +133,55 @@
       justify-content: center;
       align-items: center;
     }
+
     &__text {
       width: 276px;
       line-height: 1.625rem;
       text-align: center;
     }
   }
+
   .social {
     padding-top: 165px;
     &__icon {
       width: 34px;
       height: 34px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 114px;
+    }
+
+    &__description {
+      max-width: 480px;
+      width: 100%;
+      padding-top: 165px;
+    }
+
+    &__title {
+      font-size: 1.875rem;
+      line-height: 2.125rem;
+      letter-spacing: 0.04em;
+      padding-bottom: 15px;
+      max-width: 480px;
+    }
+
+    &__title--accent {
+      font-size: 3.625rem;
+      line-height: 4.125rem;
+      letter-spacing: 0.06em;
+      max-width: 480px;
+    }
+
+    &__contact {
+      font-size: 1rem;
+      line-height: 1.875rem;
     }
   }
 }

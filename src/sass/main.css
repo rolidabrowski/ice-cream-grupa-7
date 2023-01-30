@@ -580,6 +580,7 @@ ul {
 .footer .social {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 .footer .social__list {
   text-decoration: none;
@@ -603,11 +604,10 @@ ul {
     min-width: 480px;
     display: flex;
     justify-content: space-between;
-    padding: 0 114px;
+    padding: 0 36px;
   }
   .footer__description {
-    max-width: 474px;
-    padding-top: 165px;
+    max-width: 340px;
   }
   .footer__title {
     font-size: 1.625rem;
@@ -620,13 +620,13 @@ ul {
     font-size: 3rem;
     line-height: 3.438rem;
     letter-spacing: 0.06em;
-    max-width: 474px;
+    max-width: 340px;
   }
   .footer__contact {
     flex-wrap: wrap;
     font-size: 0.875rem;
     line-height: 1.625rem;
-    padding-top: 238px;
+    padding-top: 50px;
   }
   .footer__copyright {
     border-top: 1px solid #e1e1e1;
@@ -646,5 +646,30 @@ ul {
   .social__icon {
     width: 34px;
     height: 34px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 114px;
+  }
+  .footer__description {
+    width: 100%;
+  }
+  .footer__title {
+    font-size: 1.875rem;
+    line-height: 2.125rem;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+  .footer__title--accent {
+    font-size: 3.625rem;
+    line-height: 4.125rem;
+    width: 100%;
+  }
+  .footer__contact {
+    font-size: 1rem;
+    line-height: 1.875rem;
   }
 }
