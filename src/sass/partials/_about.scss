@@ -1,19 +1,17 @@
-p {
-  margin: 0;
-  padding: 0;
-}
-
 .about {
   background-color: $pink-light-bg;
 
   &__page-wrapper {
     padding: 125px 0 20px 0;
   }
+
   &__subtitle-sizing {
+    @extend .subtitle;
     margin-bottom: 15px;
   }
 
   &__title-sizing {
+    @extend .title;
     margin: auto;
     margin-bottom: 26px;
     width: 200px;
