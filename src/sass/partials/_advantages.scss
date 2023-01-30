@@ -1,0 +1,86 @@
+.advantages {
+  margin: 0 auto;
+  padding-bottom: 145px;
+
+  &__hidden-header {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 38px;
+  }
+  &__item {
+    max-width: 230px;
+  }
+  &__icon {
+    margin-bottom: 16px;
+  }
+  &__large-text {
+    padding: 4px 0 16px;
+    font-family: 'Titan One';
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+  &__text {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: black;
+  }
+}
+@media screen and (min-width: $tablet-size) {
+  .advantages {
+    padding-bottom: 246px;
+    &__list {
+      flex-direction: row;
+      gap: 60px;
+    }
+    &__item {
+      max-width: 180px;
+    }
+    &__icon {
+      margin-bottom: 36px;
+    }
+    &__large-text {
+      font-size: 48px;
+      line-height: 55px;
+      margin-bottom: 13px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-size) {
+  .advantages {
+    padding-bottom: 310px;
+    &__list {
+      justify-content: space-between;
+      gap: 30px;
+    }
+    &__item {
+      max-width: 330px;
+    }
+    &__icon {
+      margin-bottom: 40px;
+    }
+    &__large-text {
+      font-size: 58px;
+      line-height: 66px;
+      margin-bottom: 15px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+    }
+  }
+}
