@@ -1,67 +1,66 @@
 .reviews {
-    &__customer {
-      text-align: center;
-    }
-    &__name {
-      margin-top: 18px;
-      margin-bottom: 30px;
-    }
-    &__img {
-      display: inline;
-    }
-    &__slide {
-      display: flex;
-      gap: 18px;
-      justify-content: center;
-    }
+  &__customer {
+    text-align: center;
   }
-  
-  .opinion {
-    position: relative;
-    margin: 30px auto;
-    padding: 40px 50px 20px;
-    background-color: $reviews-bg;
-  
-    &::after {
-      content: "";
-      background-image: url("/ice-cream-grupa-7/src/assets/icons/quotation-marks.svg");
-      width: 54px;
-      height: 40px;
-      position: absolute;
-      top: 26px;
-      left: 61px;
-      z-index: 0;
-    }
-  
-    &__text {
-      position: relative;
-      z-index: 1;
-      padding: 0 18px;
-      background-image: repeating-linear-gradient(
-        to bottom,
-        transparent,
-        transparent 29px,
-        $grey-icon 29px,
-        $grey-icon 30px
-      );
-    }
+  &__name {
+    margin-top: 18px;
+    margin-bottom: 30px;
   }
-  
-  .ellipse {
+  &__img {
+    display: inline;
+  }
+  &__slide {
     display: flex;
-    gap: 10px;
+    gap: 18px;
     justify-content: center;
-  
-    &__icon {
-      width: 4px;
-      height: 4px;
-      fill: $red-dark-icon;
-  
-      &--big {
-        width: 12px;
-        height: 12px;
-        fill: $grey-light-icon;
-      }
+  }
+}
+
+.opinion {
+  position: relative;
+  margin: 30px auto;
+  padding: 40px 50px 20px;
+  background-color: $reviews-bg;
+
+  &::after {
+    content: '';
+    background-image: url('../assets/icons/quotation-marks.svg');
+    width: 54px;
+    height: 40px;
+    position: absolute;
+    top: 26px;
+    left: 61px;
+    z-index: 0;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 1;
+    padding: 0 18px;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 29px,
+      $grey-icon 29px,
+      $grey-icon 30px
+    );
+  }
+}
+
+.ellipse {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  &__icon {
+    width: 4px;
+    height: 4px;
+    fill: $red-dark-icon;
+
+    &--big {
+      width: 12px;
+      height: 12px;
+      fill: $grey-light-icon;
     }
   }
-  
+}
