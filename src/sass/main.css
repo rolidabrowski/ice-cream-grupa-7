@@ -3,6 +3,24 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+.hero-header {
+  background-color: #ffb8ca;
+}
+.hero-header__nav {
+  display: none;
+}
+.hero-header__logo {
+  margin-top: 6px;
+  margin-left: 20px;
+}
+.hero-header__button {
+  display: none;
+}
+
+.menu-list {
+  display: none;
+}
+
 .products {
   display: flex;
   justify-content: center;
