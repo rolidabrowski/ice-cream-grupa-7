@@ -110,10 +110,37 @@
   background-color: $grey-bg-button;
 }
 
+.contacts__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 767px){
+  .contacts__buttons {
+margin-top: 52px;
+display: flex;
+flex-direction: row;
+gap: 15px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .contacts__button--locations {
+    width: 198px;
+  }
+
+  .contacts__button--franchise {
+    width: 180px;
+  }
+
+}
+
 .contacts__button--locations {
   display: flex;
   cursor: pointer;
-  width: 198px;
+  width: 161.45px;
   height: 44px;
   border-radius: 22px;
   background-color: $red-icon;
@@ -139,7 +166,7 @@
 .contacts__button--franchise {
   display: flex;
   cursor: pointer;
-  width: 180px;
+  width: 161px;
   height: 44px;
   border-radius: 22px;
   background-color: $base-white;
