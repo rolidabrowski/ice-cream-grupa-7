@@ -3,6 +3,24 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+.hero-header {
+  background-color: #ffb8ca;
+}
+.hero-header__nav {
+  display: none;
+}
+.hero-header__logo {
+  margin-top: 6px;
+  margin-left: 20px;
+}
+.hero-header__button {
+  display: none;
+}
+
+.menu-list {
+  display: none;
+}
+
 .products {
   display: flex;
   justify-content: center;
@@ -14,7 +32,7 @@
   margin-bottom: 144px;
   margin-top: 0;
   color: #d41443;
-  font-family: "Titan One", cursive;
+  font-family: 'Titan One', cursive;
   font-size: 2.12rem;
   line-height: 1.15;
   text-align: center;
@@ -22,7 +40,7 @@
   text-transform: uppercase;
 }
 .products__pre-title {
-  font-family: "Titan One", cursive;
+  font-family: 'Titan One', cursive;
   font-size: 1.12rem;
   line-height: 1.17;
   text-align: center;
@@ -56,29 +74,48 @@
   position: relative;
 }
 .products__item ::before {
-  content: "";
+  content: '';
   width: 249px;
   height: 252px;
-  background-image: url("../assets/images/images/mobile/icecream-product-mb.png");
-  background-size: cover;
+  background-image: url('../assets/images/images/mobile/icecream-product-mb.png');
+  background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   top: -115px;
   left: 15px;
+}
+.products__item ::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 42%;
+  left: 50%;
 }
 .products__item--second {
   background-color: #f0d1a5;
   position: relative;
 }
 .products__item--second ::before {
-  content: "";
-  width: 249px;
+  content: '';
+  max-width: 249px;
   height: 252px;
-  background-image: url("../assets/images/images/mobile/coffee-product-mb.png");
-  background-size: cover;
+  background-image: url('../assets/images/images/mobile/coffee-product-mb.png');
   position: absolute;
   top: -115px;
   left: 15px;
+}
+.products__item--second ::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 42%;
+  left: 50%;
 }
 .products__item--third {
   background-color: #c2e297;
@@ -86,17 +123,26 @@
   margin-bottom: 98px;
 }
 .products__item--third ::before {
-  content: "";
+  content: '';
   width: 249px;
   height: 252px;
-  background-image: url("../assets/images/images/mobile/milkshake-product-mb.png");
-  background-size: cover;
+  background-image: url('../assets/images/images/mobile/milkshake-product-mb.png');
   position: absolute;
   top: -115px;
   left: 15px;
 }
+.products__item--third ::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+}
 .products__subtitle {
-  font-family: "Titan One", cursive;
+  font-family: 'Titan One', cursive;
   font-size: 1.25rem;
   line-height: 1.15;
   text-align: center;
@@ -108,7 +154,7 @@
 .products__description {
   padding-left: 41px;
   padding-right: 39px;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 0.87rem;
   line-height: 1.52;
@@ -120,7 +166,7 @@
   padding: 0;
 }
 .products__description::after {
-  content: "...";
+  content: '...';
   position: absolute;
   top: 39%;
   left: 45%;
@@ -144,17 +190,20 @@
   margin: 0 auto;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .products__item ::before {
     width: 249px;
     height: 252px;
-    background-image: url("../assets/images/images/mobile/icecream-product-mb@2x.png");
+    background-image: url('../assets/images/images/mobile/icecream-product-mb@2x.png');
   }
   .products__item--second ::before {
-    background-image: url("../assets/images/images/mobile/coffee-product-mb@2x.png");
+    background-image: url('../assets/images/images/mobile/coffee-product-mb@2x.png');
   }
   .products__item--third ::before {
-    background-image: url("../assets/images/images/mobile/milkshake-product-mb@2x.png");
+    background-image: url('../assets/images/images/mobile/milkshake-product-mb@2x.png');
   }
 }
 @media screen and (min-width: 768px) {
@@ -174,21 +223,21 @@
   .products__item ::before {
     width: 220px;
     height: 224px;
-    background-image: url("../assets/images/images/tablet/icecrem-product-tb.png");
+    background-image: url('../assets/images/images/tablet/icecrem-product-tb.png');
     top: -100px;
     left: 3px;
   }
   .products__item--second ::before {
     width: 220px;
     height: 224px;
-    background-image: url("../assets/images/images/tablet/coffee-product-tb.png");
+    background-image: url('../assets/images/images/tablet/coffee-product-tb.png');
     top: -100px;
     left: 3px;
   }
   .products__item--third ::before {
     width: 220px;
     height: 224px;
-    background-image: url("../assets/images/images/tablet/milkshake-product-tb.png");
+    background-image: url('../assets/images/images/tablet/milkshake-product-tb.png');
     top: -100px;
     left: 3px;
   }
@@ -207,15 +256,18 @@
     top: 37%;
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .products__item ::before {
-    background-image: url("../assets/images/images/tablet/icecrem-product-tb@2x.png");
+    background-image: url('../assets/images/images/tablet/icecrem-product-tb@2x.png');
   }
   .products__item--second ::before {
-    background-image: url("../assets/images/images/tablet/coffee-product-tb@2x.png");
+    background-image: url('../assets/images/images/tablet/coffee-product-tb@2x.png');
   }
   .products__item--third ::before {
-    background-image: url("../assets/images/images/tablet/milkshake-product-tb@2x.png");
+    background-image: url('../assets/images/images/tablet/milkshake-product-tb@2x.png');
   }
 }
 @media screen and (min-width: 1200px) {
@@ -240,26 +292,26 @@
   .products__item ::before {
     width: 335px;
     height: 335px;
-    background-image: url("../assets/images/images/desktop/icecrem-product-dst.png");
+    background-image: url('../assets/images/images/desktop/icecrem-product-dst.png');
     top: -210px;
     left: -2px;
   }
   .products__item--second ::before {
     width: 337px;
     height: 335px;
-    background-image: url("../assets/images/images/desktop/coffee-product-dst.png");
+    background-image: url('../assets/images/images/desktop/coffee-product-dst.png');
     top: -210px;
     left: -2px;
   }
   .products__item--third ::before {
     width: 335px;
     height: 335px;
-    background-image: url("../assets/images/images/desktop/milkshake-product-dst.png");
+    background-image: url('../assets/images/images/desktop/milkshake-product-dst.png');
     top: -210px;
     left: -2px;
   }
   .products__subtitle {
-    font-family: "Titan One", cursive;
+    font-family: 'Titan One', cursive;
     font-size: 1.25rem;
     line-height: 1.15;
     text-align: center;
@@ -283,15 +335,18 @@
     top: 36%;
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .products__item ::before {
-    background-image: url("../assets/images/images/desktop/icecrem-product-dst@2x.png");
+    background-image: url('../assets/images/images/desktop/icecrem-product-dst@2x.png');
   }
   .products__item--second ::before {
-    background-image: url("../assets/images/images/desktop/coffee-product-dst@2x.png");
+    background-image: url('../assets/images/images/desktop/coffee-product-dst@2x.png');
   }
   .products__item--third ::before {
-    background-image: url("../assets/images/images/desktop/milkshake-product-dst@2x.png");
+    background-image: url('../assets/images/images/desktop/milkshake-product-dst@2x.png');
   }
 }
 .modal__button {
@@ -482,7 +537,7 @@
   padding-top: 113px;
 }
 .ftext__title {
-  font-family: "Titan One", cursive;
+  font-family: 'Titan One', cursive;
   font-size: 18px;
   line-height: 21px;
   color: #ffa5ba;
@@ -517,7 +572,8 @@
   justify-content: space-between;
   gap: 28px;
 }
-.fsocials__icon:hover, .fsocials__icon:focus {
+.fsocials__icon:hover,
+.fsocials__icon:focus {
   fill: #d41443;
   cursor: pointer;
 }
@@ -552,8 +608,9 @@
   color: #907e82;
 }
 
-.title {
-  font-family: "Titan One", cursive;
+.title,
+.products__title {
+  font-family: 'Titan One', cursive;
   font-size: 2.12rem;
   line-height: 1.15;
   text-align: center;
@@ -561,11 +618,12 @@
   text-transform: uppercase;
 }
 
-.subtitle {
-  font-family: "Titan One", cursive;
+.subtitle,
+.products__subtitle {
+  font-family: 'Titan One', cursive;
   font-size: 1.25rem;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
