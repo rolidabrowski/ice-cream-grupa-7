@@ -1,67 +1,99 @@
 .reviews {
-    &__customer {
-      text-align: center;
-    }
-    &__name {
-      margin-top: 18px;
-      margin-bottom: 30px;
-    }
-    &__img {
-      display: inline;
-    }
-    &__slide {
-      display: flex;
-      gap: 18px;
-      justify-content: center;
-    }
+  &__customer {
+    text-align: center;
   }
-  
-  .opinion {
-    position: relative;
-    margin: 30px auto;
-    padding: 40px 50px 20px;
-    background-color: $reviews-bg;
-  
-    &::after {
-      content: "";
-      background-image: url("/ice-cream-grupa-7/src/assets/icons/quotation-marks.svg");
-      width: 54px;
-      height: 40px;
-      position: absolute;
-      top: 26px;
-      left: 61px;
-      z-index: 0;
-    }
-  
-    &__text {
-      position: relative;
-      z-index: 1;
-      padding: 0 18px;
-      background-image: repeating-linear-gradient(
-        to bottom,
-        transparent,
-        transparent 29px,
-        $grey-icon 29px,
-        $grey-icon 30px
-      );
-    }
+  &__name {
+    font-family: $default-font;
+    font-weight: 500;
+    margin-top: 18px;
+    margin-bottom: 30px;
+    font-size: 0.875rem;
+    line-height: 1.857;
   }
-  
-  .ellipse {
+  &__img {
+    display: inline;
+  }
+  &__slide {
     display: flex;
-    gap: 10px;
+    gap: 18px;
     justify-content: center;
-  
-    &__icon {
-      width: 4px;
-      height: 4px;
-      fill: $red-dark-icon;
-  
-      &--big {
-        width: 12px;
-        height: 12px;
-        fill: $grey-light-icon;
-      }
+  }
+}
+
+.opinion {
+  position: relative;
+  margin: 30px auto;
+  padding: 40px 50px 20px;
+  background-color: $reviews-bg;
+
+  &::after {
+    content: '';
+    background-image: url('/ice-cream-grupa-7/src/assets/icons/quotation-marks.svg');
+    width: 54px;
+    height: 40px;
+    position: absolute;
+    top: 26px;
+    left: 61px;
+    z-index: 0;
+  }
+
+  &__text {
+    font-family: $default-font;
+    letter-spacing: 0em;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 31px;
+    position: relative;
+    z-index: 1;
+    padding: 0 18px;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 29px,
+      $grey-icon 30px,
+      $grey-icon 30px
+    );
+  }
+}
+
+.ellipse {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  &__icon {
+    width: 4px;
+    height: 4px;
+    fill: $red-dark-icon;
+
+    &--big {
+      width: 12px;
+      height: 12px;
+      fill: $grey-light-icon;
     }
   }
-  
+}
+
+@media screen and (min-width: $tablet-size) {
+  .opinion {
+    margin: 19px 74px 24px 74px;
+    padding: 47px 80px 34px 60px;
+
+    &::after {
+      top: 30px;
+      left: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-size) {
+  .opinion {
+    margin: 15px 176px 15px 178px;
+    padding: 47px 89px 39px 87px;
+
+    &::after {
+      top: 32px;
+      left: 50px;
+    }
+  }
+}
