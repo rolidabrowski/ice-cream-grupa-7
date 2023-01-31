@@ -26,6 +26,24 @@ ul {
   color: $red-text;
 }
 
+@media (min-width: $tablet-size) {
+  .title {
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 1.625rem;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .title {
+    font-size: 3.625rem;
+  }
+  .subtitle {
+    font-size: 1.875rem;
+  }
+}
+
 .subtitle {
   font-family: $optional-font;
   font-weight: 400;
