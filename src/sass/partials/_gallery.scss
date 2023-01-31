@@ -1,0 +1,22 @@
+.gallery {
+    margin-top: 97px;
+    margin-bottom: 80px;
+    
+    &__image {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .gallery {
+        margin-top: 140px;
+        margin-bottom: 121px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .gallery {
+        margin-top: 139px;
+        margin-bottom: 123px;
+    }
+}
