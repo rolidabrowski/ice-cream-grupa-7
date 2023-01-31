@@ -6,6 +6,7 @@
   background-color: $pink-light-bg;
   margin-top: 197px;
   margin-bottom: -87px;
+  
 
 
 &__wrapper {
@@ -212,6 +213,9 @@ margin-top: 10px;
 
 @media screen and (min-width: 1200px){
 .contacts {
+    background-image: url(/src/assets/images/images/desktop/sectionbg.png);
+  background-repeat: no-repeat;
+    
     
 &__wrapper {
   display: flex;
