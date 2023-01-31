@@ -271,10 +271,12 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 38px;
+  position: relative;
 }
 .advantages__item {
   height: 156px;
   max-width: 230px;
+  position: relative;
 }
 .advantages__item ::before {
   content: "";
@@ -283,6 +285,7 @@ ul {
   background-image: url("../assets/images/icons/icon1-about-all.png");
   background-repeat: no-repeat;
   position: absolute;
+  top: -16px;
 }
 .advantages__item--second {
   position: relative;

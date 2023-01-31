@@ -10,10 +10,12 @@
     display: flex;
     flex-direction: column;
     gap: 38px;
+    position: relative;
   }
   &__item {
     height: 156px;
     max-width: 230px;
+    position: relative;
     ::before {
       content: '';
       height: 50px;
@@ -21,6 +23,7 @@
       background-image: url('../assets/images/icons/icon1-about-all.png');
       background-repeat: no-repeat;
       position: absolute;
+      top: -16px;
     }
 
     &--second {
