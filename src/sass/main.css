@@ -30,7 +30,14 @@
 }
 .products__title {
   margin-bottom: 144px;
+  margin-top: 0;
   color: #d41443;
+  font-family: 'Titan One', cursive;
+  font-size: 2.12rem;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 .products__pre-title {
   font-family: 'Titan One', cursive;
@@ -42,7 +49,7 @@
   color: #ffa5ba;
   display: flex;
   justify-content: center;
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 .products__list {
   list-style: none;
@@ -61,7 +68,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   border-radius: 24px;
   background-color: #ffb8ca;
   margin-bottom: 130px;
@@ -136,6 +142,13 @@
   left: 50%;
 }
 .products__subtitle {
+  font-family: 'Titan One', cursive;
+  font-size: 1.25rem;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 161px;
   margin-bottom: 66px;
 }
 .products__description {
@@ -147,9 +160,195 @@
   line-height: 1.52;
   text-align: center;
   letter-spacing: 0.04em;
+  margin: 0 auto 30px;
+}
+.products__description--end {
+  padding: 0;
+}
+.products__description::after {
+  content: '...';
+  position: absolute;
+  top: 39%;
+  left: 45%;
+  font-size: 1.88rem;
+}
+.products__btn {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  font-weight: 400;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 0;
+  color: #d41443;
+  font-size: 8px;
+  line-height: 1.3em;
+}
+.products__icon {
+  fill: #d41443;
+  display: flex;
   margin: 0 auto;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .products__item ::before {
+    width: 249px;
+    height: 252px;
+    background-image: url('../assets/images/images/mobile/icecream-product-mb@2x.png');
+  }
+  .products__item--second ::before {
+    background-image: url('../assets/images/images/mobile/coffee-product-mb@2x.png');
+  }
+  .products__item--third ::before {
+    background-image: url('../assets/images/images/mobile/milkshake-product-mb@2x.png');
+  }
+}
+@media screen and (min-width: 768px) {
+  .products__title {
+    margin-bottom: 150px;
+  }
+  .products__list {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 112px;
+  }
+  .products__item {
+    width: 220px;
+    margin-bottom: 0px;
+  }
+  .products__item ::before {
+    width: 220px;
+    height: 224px;
+    background-image: url('../assets/images/images/tablet/icecrem-product-tb.png');
+    top: -100px;
+    left: 3px;
+  }
+  .products__item--second ::before {
+    width: 220px;
+    height: 224px;
+    background-image: url('../assets/images/images/tablet/coffee-product-tb.png');
+    top: -100px;
+    left: 3px;
+  }
+  .products__item--third ::before {
+    width: 220px;
+    height: 224px;
+    background-image: url('../assets/images/images/tablet/milkshake-product-tb.png');
+    top: -100px;
+    left: 3px;
+  }
+  .products__subtitle {
+    margin-top: 152px;
+  }
+  .products__description {
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-bottom: 40px;
+  }
+  .products__description--end {
+    display: none;
+  }
+  .products__description::after {
+    top: 37%;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .products__item ::before {
+    background-image: url('../assets/images/images/tablet/icecrem-product-tb@2x.png');
+  }
+  .products__item--second ::before {
+    background-image: url('../assets/images/images/tablet/coffee-product-tb@2x.png');
+  }
+  .products__item--third ::before {
+    background-image: url('../assets/images/images/tablet/milkshake-product-tb@2x.png');
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__pre-title {
+    font-size: 1.88rem;
+    line-height: 1.13;
+  }
+  .products__title {
+    font-size: 3.63rem;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    margin-bottom: 259px;
+  }
+  .products__list {
+    gap: 27px;
+    margin-bottom: 119px;
+  }
+  .products__item {
+    width: 330px;
+    height: 525px;
+  }
+  .products__item ::before {
+    width: 335px;
+    height: 335px;
+    background-image: url('../assets/images/images/desktop/icecrem-product-dst.png');
+    top: -210px;
+    left: -2px;
+  }
+  .products__item--second ::before {
+    width: 337px;
+    height: 335px;
+    background-image: url('../assets/images/images/desktop/coffee-product-dst.png');
+    top: -210px;
+    left: -2px;
+  }
+  .products__item--third ::before {
+    width: 335px;
+    height: 335px;
+    background-image: url('../assets/images/images/desktop/milkshake-product-dst.png');
+    top: -210px;
+    left: -2px;
+  }
+  .products__subtitle {
+    font-family: 'Titan One', cursive;
+    font-size: 1.25rem;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 1.88rem;
+    line-height: 1.13;
+    margin-top: 153px;
+    margin-bottom: 66px;
+  }
+  .products__description {
+    font-size: 1rem;
+    padding-left: 44px;
+    padding-right: 45px;
+    margin-bottom: 62px;
+  }
+  .products__description--end {
+    display: none;
+  }
+  .products__description::after {
+    top: 36%;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .products__item ::before {
+    background-image: url('../assets/images/images/desktop/icecrem-product-dst@2x.png');
+  }
+  .products__item--second ::before {
+    background-image: url('../assets/images/images/desktop/coffee-product-dst@2x.png');
+  }
+  .products__item--third ::before {
+    background-image: url('../assets/images/images/desktop/milkshake-product-dst@2x.png');
+  }
+}
 .modal__button {
   display: flex;
   cursor: pointer;

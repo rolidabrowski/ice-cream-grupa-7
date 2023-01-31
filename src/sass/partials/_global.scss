@@ -1,4 +1,56 @@
 $min-size: 320px;
 $mobile-size: 480px;
 $tablet-size: 768px;
-$desktop-size: 1200px;
+$desktop-size: 1280px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.title {
+  font-family: $optional-font;
+  font-size: 2.12rem;
+  line-height: 2.4rem;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $red-text;
+}
+
+@media (min-width: $tablet-size) {
+  .title {
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 1.625rem;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .title {
+    font-size: 3.625rem;
+  }
+  .subtitle {
+    font-size: 1.875rem;
+  }
+}
+
+.subtitle {
+  font-family: $optional-font;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.15rem;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $pink-dark;
+}
