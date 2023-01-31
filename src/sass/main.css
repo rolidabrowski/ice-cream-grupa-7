@@ -33,7 +33,7 @@
   color: #d41443;
 }
 .products__pre-title {
-  font-family: "Titan One", cursive;
+  font-family: 'Titan One', cursive;
   font-size: 1.12rem;
   line-height: 1.17;
   text-align: center;
@@ -68,10 +68,10 @@
   position: relative;
 }
 .products__item ::before {
-  content: "";
+  content: '';
   width: 249px;
   height: 252px;
-  background-image: url("../assets/images/images/mobile/icecream-product-mb.png");
+  background-image: url('../assets/images/images/mobile/icecream-product-mb.png');
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -79,7 +79,7 @@
   left: 15px;
 }
 .products__item ::after {
-  content: "";
+  content: '';
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -93,16 +93,16 @@
   position: relative;
 }
 .products__item--second ::before {
-  content: "";
+  content: '';
   max-width: 249px;
   height: 252px;
-  background-image: url("../assets/images/images/mobile/coffee-product-mb.png");
+  background-image: url('../assets/images/images/mobile/coffee-product-mb.png');
   position: absolute;
   top: -115px;
   left: 15px;
 }
 .products__item--second ::after {
-  content: "";
+  content: '';
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -117,16 +117,16 @@
   margin-bottom: 98px;
 }
 .products__item--third ::before {
-  content: "";
+  content: '';
   width: 249px;
   height: 252px;
-  background-image: url("../assets/images/images/mobile/milkshake-product-mb.png");
+  background-image: url('../assets/images/images/mobile/milkshake-product-mb.png');
   position: absolute;
   top: -115px;
   left: 15px;
 }
 .products__item--third ::after {
-  content: "";
+  content: '';
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -141,7 +141,7 @@
 .products__description {
   padding-left: 41px;
   padding-right: 39px;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 0.87rem;
   line-height: 1.52;
@@ -338,7 +338,7 @@
   padding-top: 113px;
 }
 .ftext__title {
-  font-family: "Titan One", cursive;
+  font-family: 'Titan One', cursive;
   font-size: 18px;
   line-height: 21px;
   color: #ffa5ba;
@@ -373,7 +373,8 @@
   justify-content: space-between;
   gap: 28px;
 }
-.fsocials__icon:hover, .fsocials__icon:focus {
+.fsocials__icon:hover,
+.fsocials__icon:focus {
   fill: #d41443;
   cursor: pointer;
 }
@@ -408,8 +409,9 @@
   color: #907e82;
 }
 
-.title, .products__title {
-  font-family: "Titan One", cursive;
+.title,
+.products__title {
+  font-family: 'Titan One', cursive;
   font-size: 2.12rem;
   line-height: 1.15;
   text-align: center;
@@ -417,11 +419,12 @@
   text-transform: uppercase;
 }
 
-.subtitle, .products__subtitle {
-  font-family: "Titan One", cursive;
+.subtitle,
+.products__subtitle {
+  font-family: 'Titan One', cursive;
   font-size: 1.25rem;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
