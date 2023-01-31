@@ -285,7 +285,7 @@ ul {
   background-image: url("../assets/images/icons/icon1-about-all.png");
   background-repeat: no-repeat;
   position: absolute;
-  top: -16px;
+  top: 0;
 }
 .advantages__item--second {
   position: relative;
