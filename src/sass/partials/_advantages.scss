@@ -1,6 +1,7 @@
 .advantages {
+  max-width: 280px;
   margin: 0 auto;
-  padding-bottom: 145px;
+  padding-bottom: 97px;
 
   &__hidden-header {
     display: none;
@@ -8,23 +9,52 @@
   &__list {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
     gap: 38px;
   }
   &__item {
+    height: 156px;
     max-width: 230px;
-  }
-  &__icon {
-    margin-bottom: 16px;
+    ::before {
+      content: '';
+      height: 50px;
+      width: 33px;
+      background-image: url('../assets/images/icons/icon1-about-all.png');
+      background-repeat: no-repeat;
+      position: absolute;
+    }
+
+    &--second {
+      position: relative;
+      ::before {
+        content: '';
+        height: 50px;
+        width: 50px;
+        background-image: url(../assets/images/icons/icon2-abou-all.png);
+        background-repeat: no-repeat;
+        position: absolute;
+      }
+    }
+    &--third {
+      position: relative;
+      ::before {
+        content: '';
+        height: 50px;
+        width: 44px;
+        background-image: url(../assets/images/icons/icon3-about-all.png);
+        background-repeat: no-repeat;
+        position: absolute;
+      }
+    }
   }
   &__large-text {
-    padding: 4px 0 16px;
+    padding: 66px 0 16px;
     font-family: 'Titan One';
     font-size: 36px;
     line-height: 41px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
+    position: relative;
   }
   &__text {
     font-family: 'DM Sans';
@@ -34,14 +64,17 @@
     color: black;
   }
 }
+
 @media screen and (min-width: $tablet-size) {
   .advantages {
-    padding-bottom: 246px;
+    max-width: 700px;
+    padding-bottom: 140px;
     &__list {
       flex-direction: row;
       gap: 60px;
     }
     &__item {
+      height: 226px;
       max-width: 180px;
     }
     &__icon {
@@ -61,12 +94,14 @@
 
 @media screen and (min-width: $desktop-size) {
   .advantages {
-    padding-bottom: 310px;
+    max-width: 1050px;
+    padding-bottom: 139x;
     &__list {
       justify-content: space-between;
       gap: 30px;
     }
     &__item {
+      height: 222px;
       max-width: 330px;
     }
     &__icon {

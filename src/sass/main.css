@@ -260,8 +260,9 @@ ul {
   }
 }
 .advantages {
+  max-width: 280px;
   margin: 0 auto;
-  padding-bottom: 145px;
+  padding-bottom: 97px;
 }
 .advantages__hidden-header {
   display: none;
@@ -269,23 +270,51 @@ ul {
 .advantages__list {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
   gap: 38px;
 }
 .advantages__item {
+  height: 156px;
   max-width: 230px;
 }
-.advantages__icon {
-  margin-bottom: 16px;
+.advantages__item ::before {
+  content: "";
+  height: 50px;
+  width: 33px;
+  background-image: url("../assets/images/icons/icon1-about-all.png");
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.advantages__item--second {
+  position: relative;
+}
+.advantages__item--second ::before {
+  content: "";
+  height: 50px;
+  width: 50px;
+  background-image: url(../assets/images/icons/icon2-abou-all.png);
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.advantages__item--third {
+  position: relative;
+}
+.advantages__item--third ::before {
+  content: "";
+  height: 50px;
+  width: 44px;
+  background-image: url(../assets/images/icons/icon3-about-all.png);
+  background-repeat: no-repeat;
+  position: absolute;
 }
 .advantages__large-text {
-  padding: 4px 0 16px;
+  padding: 66px 0 16px;
   font-family: "Titan One";
   font-size: 36px;
   line-height: 41px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+  position: relative;
 }
 .advantages__text {
   font-family: "DM Sans";
@@ -297,13 +326,15 @@ ul {
 
 @media screen and (min-width: 768px) {
   .advantages {
-    padding-bottom: 246px;
+    max-width: 700px;
+    padding-bottom: 140px;
   }
   .advantages__list {
     flex-direction: row;
     gap: 60px;
   }
   .advantages__item {
+    height: 226px;
     max-width: 180px;
   }
   .advantages__icon {
@@ -321,13 +352,15 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .advantages {
-    padding-bottom: 310px;
+    max-width: 1050px;
+    padding-bottom: 139x;
   }
   .advantages__list {
     justify-content: space-between;
     gap: 30px;
   }
   .advantages__item {
+    height: 222px;
     max-width: 330px;
   }
   .advantages__icon {
