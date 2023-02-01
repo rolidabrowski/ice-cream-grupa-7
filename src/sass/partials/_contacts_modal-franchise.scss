@@ -1,180 +1,186 @@
 .modal__franchise {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  max-width: 320px;
+  max-height: 90vh;
+  background: $base-white;
+  padding: 35px 25px 20px 25px;
+  display: block;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  overflow-y: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
     width: 80vw;
-    max-width: 320px;
-    max-height: 90vh;
-    background: $base-white;
-    padding: 35px 25px 20px 25px;
-    display: block;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 12px;
-    overflow-y: auto;
-  
-    @media screen and (min-width: 480px) {
-      width: 400px;
-    }
-  
-    @media screen and (min-width: 768px) {
-      width: 80vw;
-      max-width: 500px;
-    }
-  
-    @media screen and (min-width: 1280px) {
-      width: 700px;
-    }
-  
-    label {
-      display: flex;
-      flex-direction: column;
-    }
+    max-width: 500px;
   }
-  .modal__franchise-close.btn-dark {
-    position: absolute;
-    top: 8px;
-    right: 10px;
+
+  @media screen and (min-width: 1280px) {
+    width: 700px;
   }
-  
-  .modal__franchise-form {
-    display: inherit;
-    font-size: 12px;
-  
-    @media screen and (min-width: 480px) {
-      font-size: 13px;
-    }
-  
-    @media screen and (min-width: 768px) {
-      font-size: 14px;
-    }
-  
-    @media screen and (min-width: 1280px) {
-      font-size: 16px;
-    }
-  }
-  
-  .modal__franchise-title {
-    font-size: 13px;
-    display: flex;
-  
-    @media screen and (min-width: 480px) {
-      font-size: 14px;
-    }
-  
-    @media screen and (min-width: 768px) {
-      font-size: 16px;
-    }
-  
-    @media screen and (min-width: 1280px) {
-      font-size: 18px;
-    }
-  }
-  .modal__franchise-header {
-    display: block;
-    padding: 0;
-  }
-  .modal__franchise-header-item {
+
+  .label {
     display: flex;
     flex-direction: column;
-    color: $base-black;
-  
-    &::after {
-      content: '';
-      width: 50%;
-      border-bottom: 1px solid grey;
-      margin: 4px 0;
-    }
-  
-    &:last-child::after {
-      content: '';
-      width: 0;
-      border-bottom: none;
-      margin: 0 0;
-    }
   }
-  
-  .modal__franchise-label-text {
-    font-weight: 400;
-    font-size: 12px;
-    margin: 0 0 3px 0;
-  
-    @media screen and (min-width: 480px) {
-      font-size: 13px;
-      margin: 0 0 5px 0;
-    }
-  
-    @media screen and (min-width: 768px) {
-      font-size: 14px;
-      margin: 0 0 6px 0;
-    }
-  
-    @media screen and (min-width: 1280px) {
-      font-size: 16px;
-      margin: 0 0 8px 0;
-    }
+}
+
+.modal__franchise-close.btn-dark {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+
+.modal__franchise-form {
+  display: inherit;
+  font-size: 12px;
+
+  @media screen and (min-width: 480px) {
+    font-size: 13px;
   }
-  .modal__franchise-label-input {
-    width: 100%;
-    margin-bottom: 8px;
-    border-radius: 8px;
-    height: 30px;
-    padding: 3px 15px;
-    border: 1px solid black;
-  
-    @media screen and (min-width: 480px) {
-      margin-bottom: 9px;
-      height: 35px;
-    }
-  
-    @media screen and (min-width: 768px) {
-      margin-bottom: 10px;
-      height: 40px;
-      padding: 5px 15px;
-    }
-  
-    @media screen and (min-width: 1280px) {
-      margin-bottom: 14px;
-      height: 40px;
-      padding: 5px 15px;
-    }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
   }
-  .modal__franchise-feedback {
-    width: 100%;
-    resize: none;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    padding: 3px 15px;
-  
-    @media screen and (min-width: 480px) {
-      height: 70px;
-      padding: 4px 15px;
-    }
-  
-    @media screen and (min-width: 768px) {
-      height: 90px;
-      padding: 5px 15px;
-    }
-  
-    @media screen and (min-width: 1280px) {
-      margin-bottom: 20px;
-    }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
   }
-  .modal__franchise-submit.btn-dark {
-    padding: 10px 15px;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 0;
-    border-radius: 12px;
-  
-    @media screen and (min-width: 480px) {
-      width: 150px;
-      margin: 0 auto;
-    }
-  
-    @media screen and (min-width: 768px) {
-      width: 200px;
-      margin: 0 auto;
-    }
+}
+
+.modal__franchise-title {
+  font-size: 13px;
+  display: flex;
+
+  @media screen and (min-width: 480px) {
+    font-size: 14px;
   }
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+  }
+}
+
+.modal__franchise-header {
+  display: block;
+  padding: 0;
+}
+
+.modal__franchise-header-item {
+  display: flex;
+  flex-direction: column;
+  color: $base-black;
+
+  &::after {
+    content: '';
+    width: 50%;
+    border-bottom: 1px solid grey;
+    margin: 4px 0;
+  }
+
+  &:last-child::after {
+    content: '';
+    width: 0;
+    border-bottom: none;
+    margin: 0 0;
+  }
+}
+
+.modal__franchise-label-text {
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0 0 3px 0;
+
+  @media screen and (min-width: 480px) {
+    font-size: 13px;
+    margin: 0 0 5px 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin: 0 0 6px 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    margin: 0 0 8px 0;
+  }
+}
+
+.modal__franchise-label-input {
+  width: 100%;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  height: 30px;
+  padding: 3px 15px;
+  border: 1px solid black;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 9px;
+    height: 35px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 5px 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 14px;
+    height: 40px;
+    padding: 5px 15px;
+  }
+}
+
+.modal__franchise-feedback {
+  width: 100%;
+  resize: none;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  padding: 3px 15px;
+
+  @media screen and (min-width: 480px) {
+    height: 70px;
+    padding: 4px 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 90px;
+    padding: 5px 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 20px;
+  }
+}
+
+.modal__franchise-submit.btn-dark {
+  padding: 10px 15px;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 0;
+  border-radius: 12px;
+
+  @media screen and (min-width: 480px) {
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 200px;
+    margin: 0 auto;
+  }
+}

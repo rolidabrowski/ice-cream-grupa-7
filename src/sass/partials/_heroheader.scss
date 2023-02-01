@@ -21,15 +21,8 @@
   padding-top: 6px;
 }
 
-.hamburger {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
 .hero-header {
-  &logo {
+  &__logo {
     font-size: 0;
   }
 
@@ -358,12 +351,12 @@
 @media screen and (min-width: 1280px) {
   .header-container {
     padding-left: 46px;
-    padding-top: 37;
+    padding-top: 37px;
     padding-right: 115px;
     padding-bottom: 5px;
   }
 
-  .hamburger {
+  .menu-toggle {
     display: none;
   }
 

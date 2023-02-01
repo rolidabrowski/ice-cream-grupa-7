@@ -2,6 +2,7 @@
   &__customer {
     text-align: center;
   }
+
   &__name {
     font-family: $default-font;
     font-weight: 500;
@@ -10,9 +11,11 @@
     font-size: 0.875rem;
     line-height: 1.857;
   }
+
   &__img {
     display: inline;
   }
+
   &__slide {
     display: flex;
     gap: 18px;
@@ -50,7 +53,7 @@
       to bottom,
       transparent,
       transparent 29px,
-      $grey-icon 30px,
+      $grey-icon 30px
     );
   }
 }
