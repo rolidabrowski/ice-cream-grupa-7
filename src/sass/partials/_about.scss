@@ -51,13 +51,15 @@
   }
 }
 
-// .about__image img {
-//   width: 100%;
-// }
-
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .about__background {
     background-image: url('../assets/images/images/mobile/spilled-milk-about-mb@2x.png');
+  }
+}
+
+@media (min-width: 556px) {
+  .about__image img {
+    max-width: 516px;
   }
 }
 
@@ -144,7 +146,7 @@
       line-height: 1.7rem;
     }
     &__button {
-      margin-top: 45px;
+      margin-top: 62px;
     }
   }
 }
