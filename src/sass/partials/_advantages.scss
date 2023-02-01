@@ -2,8 +2,8 @@
   padding-bottom: 97px;
   background-color: $pink-light-bg;
   &__container {
-    max-width: 280px;
-    margin: 0 auto;
+    // max-width: 280px;
+    margin-left: 20px;
   }
   &__hidden-header {
     display: none;
@@ -74,11 +74,12 @@
   .advantages {
     padding-bottom: 136px;
     &__container {
-      max-width: 700px;
+      max-width: 1050px;
+      margin: 0 72px 0 36px;
     }
     &__list {
       flex-direction: row;
-      gap: 60px;
+      justify-content: space-between;
     }
     &__item {
       height: 226px;
@@ -104,9 +105,9 @@
     padding-bottom: 139px;
     &__container {
       max-width: 1050px;
+      margin: 0 auto;
     }
     &__list {
-      justify-content: space-between;
       gap: 30px;
     }
     &__item {
