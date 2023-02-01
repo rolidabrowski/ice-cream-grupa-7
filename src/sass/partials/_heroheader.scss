@@ -21,15 +21,8 @@
   padding-top: 6px;
 }
 
-.hamburger {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
 .hero-header {
-  &logo {
+  &__logo {
     font-size: 0;
   }
 
@@ -363,7 +356,7 @@
     padding-bottom: 5px;
   }
 
-  .hamburger {
+  .menu-toggle {
     display: none;
   }
 
