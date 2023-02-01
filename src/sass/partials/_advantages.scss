@@ -1,18 +1,22 @@
 .advantages {
   padding-bottom: 97px;
   background-color: $pink-light-bg;
+
   &__container {
     margin-left: 20px;
   }
+
   &__hidden-header {
     display: none;
   }
+
   &__list {
     display: flex;
     flex-direction: column;
     gap: 38px;
     position: relative;
   }
+
   &__item {
     height: 156px;
     max-width: 230px;
@@ -38,6 +42,7 @@
         position: absolute;
       }
     }
+
     &--third {
       position: relative;
       ::before {
@@ -50,6 +55,7 @@
       }
     }
   }
+
   &__large-text {
     padding: 66px 0 17px;
     font-family: 'Titan One';
@@ -60,6 +66,7 @@
     color: $red-text;
     position: relative;
   }
+
   &__text {
     font-family: 'DM Sans';
     font-weight: 700;
@@ -72,26 +79,32 @@
 @media screen and (min-width: $tablet-size) {
   .advantages {
     padding-bottom: 136px;
+
     &__container {
       max-width: 1050px;
       margin: 0 72px 0 36px;
     }
+
     &__list {
       flex-direction: row;
       justify-content: space-between;
     }
+
     &__item {
       height: 226px;
       max-width: 180px;
     }
+
     &__icon {
       margin-bottom: 36px;
     }
+
     &__large-text {
       padding: 86px 0 13px;
       font-size: 48px;
       line-height: 55px;
     }
+
     &__text {
       font-size: 14px;
       line-height: 24px;
@@ -102,25 +115,31 @@
 @media screen and (min-width: $desktop-size) {
   .advantages {
     padding-bottom: 139px;
+
     &__container {
       max-width: 1050px;
       margin: 0 auto;
     }
+
     &__list {
       gap: 30px;
     }
+
     &__item {
       height: 222px;
       max-width: 330px;
     }
+
     &__icon {
       margin-bottom: 40px;
     }
+
     &__large-text {
       padding: 90px 0 15px;
       font-size: 58px;
       line-height: 66px;
     }
+
     &__text {
       font-size: 16px;
       line-height: 28px;
