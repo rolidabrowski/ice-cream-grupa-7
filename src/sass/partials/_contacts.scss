@@ -131,7 +131,7 @@
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1200px) {
+@media screen and (min-width: $tablet-size) {
   .contacts {
     &__wrapper {
       display: flex;
@@ -174,7 +174,7 @@
     }
 
     &__list--city {
-      font-size: 0.875rem;
+      font-size: 1rem;
     }
 
     &__list--text {
