@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
 
-  // &__page-wrapper {
-  //   margin: 0 auto;
-  // }
+  &__page-wrapper {
+    margin: 0 auto;
+  }
 
   &__title {
     margin-bottom: 144px;
@@ -144,7 +144,7 @@
     background-color: $base-white;
     border: 0;
     color: $red-text;
-    font-size: 8px;
+    font-size: 0.5rem;
     line-height: 1.3em;
   }
 
