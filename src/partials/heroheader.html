@@ -19,25 +19,30 @@
         </svg>
       </button>
       <nav class="menu-list">
-        <ul>
+        <ul class="menu-list__list">
           <li class="menu-list__item">
-            <a href="./index.html">Home</a>
+            <a class="menu-list__link" href="./index.html">Home</a>
           </li>
           <li class="menu-list__item">
-            <a href="#customer-reviews">About us</a>
+            <a class="menu-list__link" href="#customer-reviews">About us</a>
           </li>
           <li class="menu-list__item">
-            <a href="#about">How it's made?</a>
+            <a class="menu-list__link" href="#about">How it's made?</a>
           </li>
           <li class="menu-list__item">
-            <a href="#products">Our products</a>
+            <a class="menu-list__link" href="#products">Our products</a>
           </li>
-          <li class="menu-list__item">
-            <a href="#contacts">Contact</a>
+          <li class="menu-list__item menu-list__item--last">
+            <a class="menu-list__link" href="#contacts">Contact</a>
           </li>
         </ul>
       </nav>
-      <button class="hero-header__button">Buy now</button>
+      <button class="hero-header__button" type="button" data-modal-open>
+        Buy now
+        <svg class="hero-header__button-icon" width="10" height="8">
+          <use href="./assets/icons/icons.svg#icon-right-red"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
@@ -126,6 +131,16 @@
       </picture>
     </div>
     <div class="hero__woman">
+      <ul>
+        <li class="hero__list">
+          <p class="hero__list-name hero__list-name--first">16</p>
+          <p class="hero__list-description">cafes</p>
+        </li>
+        <li class="hero__list">
+          <p class="hero__list-name hero__list-name--second">23</p>
+          <p class="hero__list-description">food trucks</p>
+        </li>
+      </ul>
       <picture>
         <source
           srcset="./assets/images/images/desktop/girl-hero-dst.png"
@@ -150,15 +165,5 @@
         />
       </picture>
     </div>
-    <ul>
-      <li class="hero__list">
-        <p class="hero__list-name hero__list-name--first">16</p>
-        <p class="hero__list-description">cafes</p>
-      </li>
-      <li class="hero__list">
-        <p class="hero__list-name hero__list-name--second">23</p>
-        <p class="hero__list-description">food trucks</p>
-      </li>
-    </ul>
   </div>
 </section>

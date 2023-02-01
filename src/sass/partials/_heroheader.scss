@@ -73,6 +73,8 @@
         font-size: 3rem;
         line-height: 0.95;
         color: $red-text;
+        display: block;
+        padding-top: 0;
     }
 
     &__list-item {
@@ -143,8 +145,385 @@
     &__list {
         display: none;
     }
-
-
-
 }
 
+@media screen and (min-width: 768px) {
+
+    .header-container {
+        padding: 0 34px;
+    }
+
+    .hero-header {
+        padding-top: 37px;
+
+        &__menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        &__button {
+            width: 160px;
+            color: $red-text;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.31;
+            text-align: center;
+            padding: 12px 0;
+            background-color: $base-white;
+            border: none;
+            border-radius: 22px;
+            display: block;
+            cursor: pointer;
+        }
+
+        &__button:hover,
+        &__button:focus {
+            background-color: $grey-bg-button;
+        }
+
+        &__button-icon {
+            margin-left: 12px;
+            color: $red-text;
+            fill: transparent;
+        }
+    }
+
+    .hero-content {
+        padding-right: 34px;
+        padding-bottom: 28px;
+        padding-left: 34px;
+    }
+
+    .left-side-list {
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    .hero {
+        margin-top: 87px;
+
+        &__title {
+            padding-top: 0;
+            font-size: 1.375rem;
+            line-height: 1.13;
+        }
+
+        &__title--accent {
+            padding-top: 0;
+            font-size: 2.125rem;
+            line-height: 0.91;
+        }
+
+        &__list-item--wider {
+            display: flex;
+            gap: 0;
+            padding-top: 19px;
+            align-items: flex-end;
+        }
+
+        &__milk {
+            width: 124px;
+            height: 126px;
+            display: block;
+        }
+
+        &__milk-right {
+            margin-left: -4px;
+            margin-bottom: 6px;
+        }
+
+        &__milk-description {
+            display: block;
+            max-width: 114px;
+            font-size: 0.5rem;
+            line-height: 1.5;
+            color: $base-white;
+            padding-bottom: 7px;
+        }
+
+        &__milk-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border-style: none;
+            background-color: $base-white;
+        }
+
+        &__milk-button:hover,
+        &__milk-button:focus {
+            background-color: $red-text;
+            cursor: pointer;
+        }
+
+        &__milk-button:hover &__milk-button-icon,
+        &__milk-button:focus &__milk-button-icon {
+            fill: $base-white;
+            cursor: pointer;
+        }
+
+        &__milk-button-icon {
+            stroke-width: 0;
+            fill: $red-text;
+        }
+
+        &__ellipse {
+            width: 324px;
+            height: 322px;
+            padding-top: 32px;
+            padding-left: 71px;
+            top: -12%;
+            right: 16%;
+        }
+
+        &__ice-cream {
+            width: 143px;
+            height: 336px;
+        }
+
+        &__woman {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            position: absolute;
+            bottom: 0;
+            right: 34px;
+        }
+
+        &__list {
+            display: block;
+            position: relative;
+            padding-right: 10px;
+            margin-top: 0;
+        }
+
+        &__list::after {
+            content: ' ';
+            display: block;
+            width: 16px;
+            height: 16px;
+            background-color: $base-white;
+            border-radius: 50%;
+            position: absolute;
+            top: -2px;
+            right: 0;
+            z-index: -1;
+        }
+
+        &__list-name {
+            font-family: $optional-font;
+            font-weight: 400;
+            font-size: 1.75rem;
+            line-height: 1.14;
+            text-align: right;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: $red-text;
+            margin-bottom: 0;
+        }
+
+        &__list-name--first {
+            margin-top: 9px;
+        }
+
+        &__list-name--second {
+            margin-top: 14px;
+        }
+
+        &__list-description {
+            margin-top: 0;
+            font-size: 0.5rem;
+            line-height: 1.25;
+            text-align: right;
+            color: $base-white;
+        }
+
+        &__woman picture {
+            display: block;
+            font-size: 0;
+        }
+
+        &__woman-picture {
+            width: 168px;
+            height: 133px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .header-container {
+        padding-left: 46px;
+        padding-top: 37;
+        padding-right: 115px;
+        padding-bottom: 5px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .hero-content {
+        padding-bottom: 45px;
+        padding-top: 34px;
+        padding: 0 116px;
+        min-width: 1280px;
+    }
+
+    .hero-header {
+
+        &__menu {
+            gap: 0;
+        }
+
+        &__logo {
+            padding-right: 110px;
+        }
+    }
+
+    .menu-list {
+        display: flex;
+        align-items: center;
+        padding-right: 107px;
+
+        &__list {
+            padding-left: 0;
+        }
+
+        &__item {
+            display: inline;
+            padding-right: 35px;
+        }
+
+        &__item--last {
+            padding-right: 0;
+        }
+
+        &__link {
+            color: $base-white;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.31;
+        }
+
+        &__link:hover,
+        &__link:focus {
+            color: $red-text;
+        }
+    }
+
+    .hero {
+
+        &__title {
+            padding-bottom: 25px;
+            padding-top: 84px;
+            font-size: 2.375rem;
+            line-height: 1.15;
+            margin-bottom: 0;
+        }
+
+        &__title--accent {
+            font-size: 3.625rem;
+            line-height: 0.89;
+            padding: 0;
+        }
+
+        &__list-item {
+            gap: 15px;
+        }
+
+        &__list-item--wider {
+            padding-top: 56px;
+            margin-bottom: 45px;
+        }
+
+        &__button {
+            font-size: 0.875rem;
+            line-height: 1.28;
+            padding: 11px 22px;
+        }
+
+        &__milk {
+            width: 188px;
+            height: 191px;
+            margin-left: -38px;
+        }
+
+        &__milk-right {
+            margin-left: 30px;
+            margin-bottom: 11px;
+        }
+
+        &__milk-description {
+            padding-bottom: 20px;
+            font-size: 0.875rem;
+            line-height: 1.42;
+            max-width: 200px;
+        }
+
+        &__milk-button {
+            width: 26px;
+            height: 26px;
+        }
+
+        &__milk-button-icon {
+            width: 9px;
+            height: 9px;
+        }
+
+        &__ellipse {
+            width: 538px;
+            height: 538px;
+            padding-top: 56px;
+            padding-left: 119px;
+            top: -18px;
+            right: 265px;
+        }
+
+        &__ice-cream {
+            width: 236px;
+            height: 557px;
+        }
+
+        &__woman {
+            right: 109px;
+            gap: 80px;
+        }
+
+        &__list {
+            padding-right: 0;
+        }
+
+        &__list::after {
+            width: 30px;
+            height: 30px;
+            top: -4px;
+            right: -15px;
+        }
+
+        &__list-name {
+            font-size: 2.875rem;
+            line-height: 1.15;
+        }
+
+        &__list-name--first {
+            margin-top: 84px;
+        }
+
+        &__list-name--second {
+            margin-top: 14px;
+        }
+
+        &__list-description {
+            font-size: 0.875rem;
+            line-height: 1.28;
+        }
+
+        &__woman-picture {
+            width: 293px;
+            height: 232px;
+        }
+    }
+}
