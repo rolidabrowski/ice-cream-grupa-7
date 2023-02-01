@@ -132,7 +132,7 @@ margin-top: 10px;
 }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1200px) {
+@media screen and (min-width: $tablet-size) and (max-width: $desktop-size) {
 .contacts {
     
 &__wrapper {
@@ -211,10 +211,11 @@ margin-top: 10px;
 }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: $desktop-size){
 .contacts {
     background-image: url(/src/assets/images/images/desktop/sectionbg.png);
   background-repeat: no-repeat;
+  background-size: 100%;
     
     
 &__wrapper {
