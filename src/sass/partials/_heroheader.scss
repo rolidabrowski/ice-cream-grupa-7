@@ -5,9 +5,7 @@
 
 .header-wrapper {
   background-color: $pink-bg;
-  position: fixed;
-  top: 0;
-  z-index: 10;
+  z-index: 0;
   width: 100vw;
 }
 
@@ -35,10 +33,13 @@
   display: none;
 }
 
-.hero-content {
+.hero-container {
   min-width: 320px;
   padding: 0;
   margin: 0 auto;
+}
+
+.relative {
   position: relative;
   padding-bottom: 120px;
   margin-bottom: 121px;
@@ -53,7 +54,7 @@
 
 .hero {
   background-color: $pink-bg;
-  margin-top: 56px;
+  z-index: 1;
 
   &__title {
     font-family: $optional-font;
@@ -76,6 +77,7 @@
 
   &__list-item {
     display: flex;
+    padding-top: 19px;
     gap: 8px;
   }
 
@@ -145,6 +147,7 @@
 }
 
 @media screen and (min-width: 768px) {
+
   .header-container {
     padding: 0 34px;
   }
@@ -184,10 +187,17 @@
     }
   }
 
-  .hero-content {
+  .hero-container {
     padding-right: 34px;
     padding-bottom: 28px;
     padding-left: 34px;
+  }
+
+  .relative {
+    padding-bottom: 28px;
+    overflow: visible;
+    display: flex;
+    justify-content: space-between;
   }
 
   .left-side-list {
@@ -196,10 +206,9 @@
   }
 
   .hero {
-    margin-top: 87px;
 
     &__title {
-      padding-top: 0;
+      padding-top: 15px;
       font-size: 1.375rem;
       line-height: 1.13;
     }
@@ -270,8 +279,8 @@
       height: 322px;
       padding-top: 32px;
       padding-left: 71px;
-      top: -12%;
-      right: 16%;
+      top: -18.5%;
+      right: 18.5%;
     }
 
     &__ice-cream {
@@ -282,7 +291,7 @@
     &__woman {
       display: flex;
       flex-direction: column;
-      gap: 40px;
+      gap: 72px;
       position: absolute;
       bottom: 0;
       right: 34px;
@@ -360,11 +369,12 @@
     display: none;
   }
 
-  .hero-content {
+  .hero-container {
     padding-bottom: 45px;
     padding-top: 34px;
     padding: 0 116px;
     min-width: 1280px;
+    z-index: 1;
   }
 
   .hero-header {
@@ -408,10 +418,13 @@
     }
   }
 
+  .left-side-list {
+    margin-top: 84px;
+  }
+
   .hero {
     &__title {
       padding-bottom: 25px;
-      padding-top: 84px;
       font-size: 2.375rem;
       line-height: 1.15;
       margin-bottom: 0;
@@ -425,6 +438,7 @@
 
     &__list-item {
       gap: 15px;
+      padding-top: 0;
     }
 
     &__list-item--wider {
@@ -471,7 +485,7 @@
       height: 538px;
       padding-top: 56px;
       padding-left: 119px;
-      top: -18px;
+      top: -19px;
       right: 265px;
     }
 
@@ -482,7 +496,7 @@
 
     &__woman {
       right: 109px;
-      gap: 80px;
+      gap: 109px;
     }
 
     &__list {
@@ -517,6 +531,7 @@
     &__woman-picture {
       width: 293px;
       height: 232px;
+      margin-right: 0;
     }
   }
 }
