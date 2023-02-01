@@ -1,23 +1,33 @@
 <section class="about">
   <div class="about__page-wrapper">
-    <h3 class="header__subtitle about__subtitle-sizing">TRADITIONAL AND LOVE</h3>
-    <h2 class="header__title about__title-sizing">HOW IT'S MADE?</h2>
+    <h3 class="about__subtitle">TRADITIONAL AND LOVE</h3>
+    <h2 class="about__title">HOW IT'S MADE?</h2>
     <div class="about__background">
       <div class="about__image">
-        <img
-          src="./assets/images/images/mobile/cow-about-mb.png"
-          alt="Cow and jug of milk"
-          srcset="
-            ./assets/images/images/mobile/cow-about-mb.png       480w,
-            ./assets/images/images/mobile/cow-about-mb@2x.png    960w,
-            ./assets/images/images/tablet/cow-about-tb.png       768w,
-            ./assets/images/images/tablet/cow-about-tb@2x.png   1536w,
-            ./assets/images/images/desktop/cow-about-dst.png    1280w,
-            ./assets/images/images/desktop/cow-about-dst@2x.png 2560w
-          "
-          sizes="(min-width: 1280px) 516px, (min-width: 768px) 340px, 100vw "
-          width="100%"
-        />
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./assets/images/images/desktop/cow-about-dst.png    1x,
+              ./assets/images/images/desktop/cow-about-dst@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./assets/images/images/tablet/cow-about-tb.png    1x,
+              ./assets/images/images/tablet/cow-about-tb@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 320px)"
+            srcset="
+              ./assets/images/images/mobile/cow-about-mb.png    1x,
+              ./assets/images/images/mobile/cow-about-mb@2x.png 2x
+            "
+          />
+          <img src="./assets/images/images/mobile/cow-about-mb.png" alt="Cow and jug of milk" />
+        </picture>
       </div>
       <article class="about__article">
         <p class="about__text-main">
@@ -33,7 +43,12 @@
           <br />
           <p class="about__text">Aliquam erat volutpat. Aenean accumsan.</p>
         </div>
-        <button class="about__button">Read More</button>
+        <button type="button" class="about__button">
+          Read more
+          <svg width="6.43px" height="8px" class="about__button--vector">
+            <use href="./assets/icons/icons.svg#icon-right-red"></use>
+          </svg>
+        </button>
       </article>
     </div>
   </div>

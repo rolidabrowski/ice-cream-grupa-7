@@ -28,7 +28,7 @@
 
   &::after {
     content: '';
-    background-image: url('/ice-cream-grupa-7/src/assets/icons/quotation-marks.svg');
+    background-image: url('../assets/icons/quotation-marks.svg');
     width: 54px;
     height: 40px;
     position: absolute;
@@ -51,7 +51,6 @@
       transparent,
       transparent 29px,
       $grey-icon 30px,
-      $grey-icon 30px
     );
   }
 }

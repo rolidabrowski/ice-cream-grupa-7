@@ -20,6 +20,7 @@
     font-size: 1.125rem;
     line-height: 1.3rem;
     color: $pink-dark;
+    padding-bottom: 16px;
   }
 
   &__title--accent {
@@ -37,6 +38,7 @@
     font-size: 0.75rem;
     line-height: 1.85rem;
     color: $base-black;
+    width: 100%;
   }
 
   &__link {
@@ -64,6 +66,7 @@
   .social {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
 
     &__list {
       text-decoration: none;
@@ -83,6 +86,115 @@
         fill: $red-text;
         cursor: pointer;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer {
+    &__container {
+      min-width: 480px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 36px;
+    }
+
+    &__description {
+      max-width: 340px;
+      width: 100%;
+      padding-top: 165px;
+    }
+
+    &__title {
+      font-size: 1.625rem;
+      line-height: 1.875rem;
+      padding-bottom: 16px;
+      letter-spacing: 0.04em;
+      max-width: 340px;
+    }
+
+    &__title--accent {
+      font-size: 3rem;
+      line-height: 3.438rem;
+      letter-spacing: 0.06em;
+      max-width: 340px;
+    }
+
+    &__contact {
+      flex-wrap: wrap;
+      font-size: 0.875rem;
+      line-height: 1.625rem;
+      padding-top: 0px;
+      width: 100%;
+    }
+
+    &__copyright {
+      border-top: 1px solid #e1e1e1;
+      min-height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__text {
+      width: 276px;
+      line-height: 1.625rem;
+      text-align: center;
+    }
+  }
+
+  .social {
+    padding-top: 165px;
+    height: fit-content;
+
+    &__list {
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0px;
+      width: 152px;
+    }
+
+    &__icon {
+      width: 34px;
+      height: 34px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 114px;
+    }
+
+    &__description {
+      max-width: 480px;
+      width: 100%;
+      padding-top: 165px;
+    }
+
+    &__title {
+      font-size: 1.875rem;
+      line-height: 2.125rem;
+      letter-spacing: 0.04em;
+      padding-bottom: 15px;
+      max-width: 480px;
+    }
+
+    &__title--accent {
+      font-size: 3.625rem;
+      line-height: 4.125rem;
+      letter-spacing: 0.06em;
+      max-width: 480px;
+    }
+
+    &__contact {
+      font-size: 1rem;
+      line-height: 1.875rem;
+      width: 100%;
     }
   }
 }

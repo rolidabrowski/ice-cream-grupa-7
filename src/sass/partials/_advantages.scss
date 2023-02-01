@@ -1,0 +1,130 @@
+.advantages {
+  padding-bottom: 97px;
+  background-color: $pink-light-bg;
+  &__container {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  &__hidden-header {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    position: relative;
+  }
+  &__item {
+    height: 156px;
+    max-width: 230px;
+    position: relative;
+    ::before {
+      content: '';
+      height: 50px;
+      width: 33px;
+      background-image: url('../assets/images/icons/icon1-about-all.png');
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+    }
+
+    &--second {
+      position: relative;
+      ::before {
+        content: '';
+        height: 50px;
+        width: 50px;
+        background-image: url('../assets/images/icons/icon2-about-all.png');
+        background-repeat: no-repeat;
+        position: absolute;
+      }
+    }
+    &--third {
+      position: relative;
+      ::before {
+        content: '';
+        height: 50px;
+        width: 44px;
+        background-image: url('../assets/images/icons/icon3-about-all.png');
+        background-repeat: no-repeat;
+        position: absolute;
+      }
+    }
+  }
+  &__large-text {
+    padding: 66px 0 17px;
+    font-family: 'Titan One';
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $red-text;
+    position: relative;
+  }
+  &__text {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: $base-black;
+  }
+}
+
+@media screen and (min-width: $tablet-size) {
+  .advantages {
+    padding-bottom: 136px;
+    &__container {
+      max-width: 700px;
+    }
+    &__list {
+      flex-direction: row;
+      gap: 60px;
+    }
+    &__item {
+      height: 226px;
+      max-width: 180px;
+    }
+    &__icon {
+      margin-bottom: 36px;
+    }
+    &__large-text {
+      padding: 86px 0 13px;
+      font-size: 48px;
+      line-height: 55px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-size) {
+  .advantages {
+    padding-bottom: 139px;
+    &__container {
+      max-width: 1050px;
+    }
+    &__list {
+      justify-content: space-between;
+      gap: 30px;
+    }
+    &__item {
+      height: 222px;
+      max-width: 330px;
+    }
+    &__icon {
+      margin-bottom: 40px;
+    }
+    &__large-text {
+      padding: 90px 0 15px;
+      font-size: 58px;
+      line-height: 66px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+    }
+  }
+}
