@@ -1,72 +1,62 @@
 <div class="backdrop is-hidden" data-contacts__modal-fr>
-    <div class="modal__franchise">
-      <button
-        type="button"
-        class="modal__franchise-close btn-dark modal-close-btn"
-        data-contacts__modal-close-fr
-      >
-        <svg
-          class="modal__franchise-close-svg modal-close-btn__icon"
-          width="14"
-          height="14"
-        >
-          <use href="./images/sprite.svg#icon-close"></use>
-        </svg>
-      </button>
-      <form class="modal__franchise-form">
-        <p class="modal__franchise-title">Benefits of working with us:</p>
-        <ul class="modal__franchise-header">
-          <li class="modal__franchise-header-item">
-            You'll receive an additional income.
-          </li>
-          <li class="modal__franchise-header-item">
-            Learning and development opportunities. 
-          </li>
-          <li class="modal__franchise-header-item">Flexible working time.</li>
-        </ul>
-        <label lang="en" class="modal__franchise-label-name">
-          <span class="modal__franchise-label-text">Name*</span>
-          <input
-            type="text"
-            name="user-name"
-            class="modal__franchise-label-input"
-            placeholder="John"
-            required
-            minlength="4"
-          />
-        </label>
-        <label lang="en" class="modal__franchise-label-phone">
-          <span class="modal__franchise-label-text">Phone number*</span>
-          <input
-            type="tel"
-            name="user-phone"
-            class="modal__franchise-label-input"
-            placeholder="050-123-45-67"
-            required
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-          />
-        </label>
-        <label lang="en" class="is-margined">
-          <span class="modal__franchise-label-text">Email*</span>
-          <input
-            type="email"
-            name="user-email"
-            class="modal__franchise-label-input"
-            placeholder="example@mail.com"
-            required
-          />
-        </label>
-        <label lang="en">
-          <span class="modal__franchise-label-text">Feedback</span>
-          <textarea
-            class="modal__franchise-feedback"
-            rows="4"
-            placeholder="Just write something here"
-          ></textarea>
-        </label>
-        <button type="submit" class="modal__franchise-submit btn-dark">
-          Submit
-        </button>
-      </form>
-    </div>
+  <div class="modal__franchise">
+    <button
+      type="button"
+      class="modal__franchise-close btn-dark modal-close-btn"
+      data-contacts__modal-close-fr
+    >
+      <svg class="modal__franchise-close-svg modal-close-btn__icon" width="14" height="14">
+        <use href="./assets/icons/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="modal__franchise-form">
+      <p class="modal__franchise-title">Benefits of working with us:</p>
+      <ul class="modal__franchise-header">
+        <li class="modal__franchise-header-item">You'll receive an additional income.</li>
+        <li class="modal__franchise-header-item">Learning and development opportunities.</li>
+        <li class="modal__franchise-header-item">Flexible working time.</li>
+      </ul>
+      <label lang="en" class="modal__franchise-label-name">
+        <span class="modal__franchise-label-text">Name*</span>
+        <input
+          type="text"
+          name="user-name"
+          class="modal__franchise-label-input"
+          placeholder="John"
+          required
+          minlength="4"
+        />
+      </label>
+      <label lang="en" class="modal__franchise-label-phone">
+        <span class="modal__franchise-label-text">Phone number*</span>
+        <input
+          type="tel"
+          name="user-phone"
+          class="modal__franchise-label-input"
+          placeholder="050-123-45-67"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        />
+      </label>
+      <label lang="en" class="is-margined">
+        <span class="modal__franchise-label-text">Email*</span>
+        <input
+          type="email"
+          name="user-email"
+          class="modal__franchise-label-input"
+          placeholder="example@mail.com"
+          required
+        />
+      </label>
+      <label lang="en">
+        <span class="modal__franchise-label-text">Feedback</span>
+        <textarea
+          class="modal__franchise-feedback"
+          rows="4"
+          placeholder="Just write something here"
+        ></textarea>
+      </label>
+      <button type="submit" class="modal__franchise-submit btn-dark">Submit</button>
+    </form>
   </div>
+</div>
