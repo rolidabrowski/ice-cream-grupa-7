@@ -14,19 +14,6 @@
     text-transform: uppercase;
   }
 
-  &__pre-title {
-    font-family: $optional-font;
-    font-size: 1.12rem;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $pink-dark;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-  }
-
   &__list {
     list-style: none;
     display: flex;
@@ -105,6 +92,16 @@
     text-transform: uppercase;
     margin-top: 161px;
     margin-bottom: 66px;
+
+    &--pre-title {
+      margin-top: 0;
+      font-size: 1.12rem;
+      line-height: 1.17;
+      color: $pink-dark;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
   }
 
   &__description {
@@ -140,7 +137,7 @@
     background-color: $base-white;
     border: 0;
     color: $red-text;
-    font-size: 8px;
+    font-size: 0.5rem;
     line-height: 1.3em;
   }
 
@@ -180,6 +177,7 @@
     &__title {
       margin-bottom: 150px;
     }
+
     &__list {
       flex-direction: row;
       align-items: flex-start;
@@ -219,9 +217,15 @@
         }
       }
     }
+
     &__subtitle {
       margin-top: 152px;
+
+      &--pre-title {
+        margin-top: 0;
+      }
     }
+
     &__description {
       padding-left: 11px;
       padding-right: 11px;
@@ -264,16 +268,13 @@
 
 @media screen and (min-width: $desktop-size) {
   .products {
-    &__pre-title {
-      font-size: 1.88rem;
-      line-height: 1.13;
-    }
     &__title {
       font-size: 3.63rem;
       line-height: 1.14;
       letter-spacing: 0.06em;
       margin-bottom: 259px;
     }
+
     &__list {
       gap: 27px;
       margin-bottom: 119px;
@@ -311,6 +312,7 @@
         }
       }
     }
+
     &__subtitle {
       font-family: $optional-font;
       font-size: 1.25rem;
@@ -318,12 +320,17 @@
       text-align: center;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-
       font-size: 1.88rem;
       line-height: 1.13;
       margin-top: 153px;
-      margin-bottom: 66px;
+
+      &--pre-title {
+        font-size: 1.88rem;
+        line-height: 1.13;
+        margin-top: 0;
+      }
     }
+
     &__description {
       font-size: 1rem;
       padding-left: 44px;
