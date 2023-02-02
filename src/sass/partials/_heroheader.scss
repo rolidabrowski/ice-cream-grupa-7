@@ -87,7 +87,7 @@
 
   &__button {
     font-size: 0.5rem;
-    line-height: 1.25;
+    line-height: 1.25rem;
     text-align: center;
     border: none;
     border-radius: 20px;
@@ -272,6 +272,8 @@
     }
 
     &__milk-button-icon {
+      width: 9px;
+      height: 9px;
       stroke-width: 0;
       fill: $red-text;
     }
@@ -455,7 +457,7 @@
 
     &__button {
       font-size: 0.875rem;
-      line-height: 1.28;
+      line-height: 1.25rem;
       padding: 11px 22px;
     }
 
@@ -497,6 +499,8 @@
     }
 
     &__ice-cream {
+      position: absolute;
+      bottom: -97px;
       width: 236px;
       height: 557px;
     }
