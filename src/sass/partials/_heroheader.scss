@@ -121,7 +121,7 @@
 
   &__ellipse {
     position: absolute;
-    top: 27px;
+    top: 25px;
     right: -62px;
     width: 346px;
     height: 344px;
@@ -147,6 +147,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header-wrapper {
+    width: 100%;
+  }
 
   .header-container {
     padding: 0 34px;
@@ -206,7 +209,6 @@
   }
 
   .hero {
-
     &__title {
       padding-top: 15px;
       font-size: 1.375rem;
@@ -358,6 +360,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .header-wrapper {
+    width: 100%;
+  }
+
   .header-container {
     padding-left: 46px;
     padding-top: 37px;
@@ -391,6 +397,7 @@
     display: flex;
     align-items: center;
     padding-right: 107px;
+    z-index: 2;
 
     &__list {
       padding-left: 0;
@@ -485,8 +492,8 @@
       height: 538px;
       padding-top: 56px;
       padding-left: 119px;
-      top: -19px;
-      right: 265px;
+      top: -40px;
+      right: 260px;
     }
 
     &__ice-cream {
