@@ -15,5 +15,16 @@
 @media (min-width: 1280px) {
   .gallery {
     margin-bottom: 123px;
+
+    &__background {
+      height: 430px;
+      background-image: linear-gradient(
+        to bottom,
+        $pink-light-bg 0%,
+        $pink-light-bg 40%,
+        white 40%,
+        white 100%
+      );
+    }
   }
 }

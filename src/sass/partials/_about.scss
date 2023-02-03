@@ -1,7 +1,7 @@
 .about {
   background-color: $pink-light-bg;
 
-  &__page-wrapper {
+  &__wrapper {
     padding: 125px 0 20px 0;
   }
 
@@ -73,12 +73,15 @@
   .about {
     &__background {
       background-image: none;
+    }
+
+    &__flex {
       display: flex;
       gap: 17px;
       align-items: flex-start;
     }
 
-    &__page-wrapper {
+    &__wrapper {
       padding: 130px 36px 66px 39px;
     }
 
@@ -122,14 +125,17 @@
   .about {
     &__background {
       background-image: url('../assets/images/images/desktop/spilled-milk-about-dst.png');
-      background-position: bottom -90px right;
-      background-size: cover;
+      background-position: bottom;
+      background-size: 100%;
+    }
+
+    &__flex {
       display: flex;
       gap: 74px;
       align-items: flex-start;
     }
 
-    &__page-wrapper {
+    &__wrapper {
       padding: 125px 0 39px 0;
     }
 

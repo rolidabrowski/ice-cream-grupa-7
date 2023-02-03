@@ -1,9 +1,7 @@
 .contacts {
-  max-width: 1280px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 0 auto;
   background-color: $pink-light-bg;
   margin-top: 197px;
   margin-bottom: -87px;
@@ -209,7 +207,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contacts {
     background-image: url('../assets/images/images/desktop/sectionbg.png');
     background-repeat: no-repeat;
